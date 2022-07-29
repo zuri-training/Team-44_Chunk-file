@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+  <form method="post">
+    {% csrf_token %}
+
+    <input type="text" name="username" placeholder="Enter your Email" required /> <br />
+
+    <input type="password" name="password" placeholder="Enter your Password" required />
+
+    <button type="submit">Login</button>
+  </form>
+{% endblock %}

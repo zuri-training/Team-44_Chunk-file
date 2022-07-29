@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block css_files %}
+<link rel="stylesheet" href="{% static 'accounts/styles.css' %}">
+{% endblock  %}
+
+{% block content %}
+<form method="post">
+    {% csrf_token %}
+    <div>
+        <input type="text" name="username" id="username" id="exampleInputEmail1" placeholder="Enter your username" required />
+      
+        <input type="email" name="email" placeholder="Enter your Email" required />
+    <input type="password" name="password1"  placeholder="Enter your Password" required />
+    <input type="password" name="password2" placeholder="confirm your Password" required />
+    <button type="submit">
+        SignUp
+    </button>
+</form>
+{% endblock %}
