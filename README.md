@@ -89,4 +89,5 @@ Users will need to register on our website to be able to view more details on wh
 The User can upload their Large CSV and JSON files from their local devices or drag the file to the section on their dashboard where the file will be uploaded.
 After the file has been uploaded, the user will see a “split” action button where users will click to get their files chunked. While splitting the file, the users will get to see a progress bar on the file that is splitting and also get to know how long it is taking for the file to be chunked. 
 
+After chunking their files, the platform gives the users an option to “Download and save files” and “Download and Don’t save”. The “Download and save files” option makes it possible for users to download the files to local drive and come back to our website to get the saved/stored documents. The other option is the “Download and Don’t save”, this option was provided for those users that are chunking confidential CSV and JSON files on our platform and would not want us to have hold of the files.
 
