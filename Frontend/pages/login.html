@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../styles/login.css">
+</head>
+<body class="flex_c">
+    <main class="container flex_c">
+        <div class="left flex_c"><img src="../Images/pana.png" alt="pana"></div>
+        <div class="right">
+            <form action="/" method="get">
+                <h1>Sign In</h1>
+                <div class="form">
+                  <input
+                    type="text"
+                    id="email"
+                    class="form__input"
+                    autocomplete="off"
+                    placeholder=" "
+                  />
+                  <label for="email" class="form__label">Email Address</label>
+                </div>
+                <div class="form">
+                  <input
+                    type="password"
+                    id="fullname"
+                    class="form__input"
+                    autocomplete="off"
+                    placeholder=" "
+                  />
+                  <label for="password" class="form__label">Password</label>
+                </div>
+                <div class="strong">
+                    <strong><a href="./">Forgot Password?</a> </strong>
+                </div>
+                <div class="signin_btn flex_c">
+                    <button class="btn btn-signin">Sign In</button>
+                    <p>Don't have an Account? <a href="#">Create Account</a></p>
+                  </div>
+        </div>
+    </main>
+</body>
+</html>
