@@ -91,3 +91,5 @@ After the file has been uploaded, the user will see a “split” action button 
 
 After chunking their files, the platform gives the users an option to “Download and save files” and “Download and Don’t save”. The “Download and save files” option makes it possible for users to download the files to local drive and come back to our website to get the saved/stored documents. The other option is the “Download and Don’t save”, this option was provided for those users that are chunking confidential CSV and JSON files on our platform and would not want us to have hold of the files.
 
+We use HTML, CSS, and JavaScript to create our websites. Our client-side code is very modular and can be easily consumed by modern front-end technologies. We also use Django for authentication purposes. Our back-end is built using Python/Django with a PostgreSQL database.
+
