@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+}
+
+.flex_c {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body {
+  font-family: 'Sora', sans-serif;
+  min-height: 100vh;
+  max-width: 100vw;
+}
+
+.left {
+  padding: 0 0 3rem 3rem;
+  flex: 0.2;
+  min-height: 100vh;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column;
+  position: relative;
+}
+
+.left::after {
+  content: '';
+  background-color: #e6e9f0;
+  height: 49.5rem;
+  width: 2px;
+  position: absolute;
+  top: -3rem;
+  left: 18rem;
+}
+
+.logo p {
+  color: #03256c;
+  font-weight: bold;
+  margin-left: 0.5rem;
+}
+
+.active {
+  background-color: #e6e9f0;
+}
+
+.blue {
+  position: relative;
+  bottom: 1.5rem;
+}
+
+.keet {
+  color: #06bee1;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  color: #03256c;
+  margin: 2rem 0;
+  font-weight: bold;
+  padding: 0.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+
+li:hover {
+  background-color: #e6e9f06b;
+  transform: translateX(20px);
+}
+
+li img {
+  margin-right: 0.3rem;
+}
+
+h1 {
+  color: #03256c;
+  margin: 1rem 0 1.3rem;
+}
+
+.right {
+  flex: 0.8;
+  min-height: 100vh;
+  padding: 0 0 1.5rem 4rem;
+}
+
+.profile-head {
+  justify-content: flex-start;
+}
+
+.profile-head > img {
+  margin-right: 1.5rem;
+}
+
+.profile__button {
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.profile__button img {
+  margin: 0 0.5rem 0 0;
+}
+
+.btn {
+  background-color: #03256c;
+  color: #fff;
+  font-family: inherit;
+  margin: 0.5rem 0;
+  padding: 0.5rem 0.7rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn:hover {
+  transform: scale(1.04);
+}
+
+.btn:active {
+  transform: scale(0.96);
+}
+
+.unfilled {
+  background-color: #fff;
+  color: #03256c;
+  border: 1px solid #03256c;
+}
+
+.emails {
+  margin: 1rem 0;
+}
+
+.form {
+  position: relative;
+  width: 25rem;
+  height: 3rem;
+  margin: 1rem 0;
+}
+
+.name {
+  display: flex;
+}
+
+.form__input {
+  background-color: #f9f9f9;
+  padding: 0.5rem;
+  border-radius: 0.2rem;
+  border: 1px solid #4d4d4d46;
+  position: absolute;
+  top: 0;
+  left: 0;
+  outline: none;
+  font-family: inherit;
+  font-size: inherit;
+  /* width: 100%; */
+}
+
+.form__input:hover {
+  border-color: #4d4d4da4;
+}
+
+.name .form__input {
+  width: 90%;
+}
+
+.email .form__input {
+  width: 35rem;
+}
+
+.passwords h2,
+.notifications h2 {
+  color: #03256c;
+}
+
+.passwords .form__input {
+  width: 90%;
+}
+
+.set__password {
+  display: flex;
+  align-items: center;
+}
+
+/* Change border when input focus*/
+
+.form__input:focus {
+  border-color: none;
+  background-color: #fff;
+  outline: none;
+}
+
+.form__label {
+  position: absolute;
+  font-size: 0.8rem;
+  font-weight: bold;
+  left: 0.4rem;
+  top: 0.75rem;
+  padding: 0 0.1rem;
+  color: #4d4d4d;
+  opacity: 0.6;
+  cursor: text;
+  transition: top 200ms ease-in, left 200ms ease-in, font-size 200ms ease-in;
+}
+
+/* 
+1. When the input is in the focus state
+reduce the size of the label and move upwards 
+
+2. Keep label state when content is in input field 
+*/
+
+.form__input:focus ~ .form__label,
+.form__input:not(:placeholder-shown).form__input:not(:focus) ~ .form__label {
+  top: -0.8rem;
+  font-size: 0.8rem;
+  left: 0.8rem;
+  padding: 0.3rem;
+  z-index: 10;
+  background-color: #fff;
+  color: #383838;
+}
+
+.notifications {
+  width: 77%;
+}
+
+.notification {
+  margin-top: 2rem;
+  justify-content: space-between;
+}
+
+.notification__email,
+.notification__desktop {
+  justify-content: space-between;
+  gap: 14rem;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 1.5rem;
+  height: 0.8rem;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: grey;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: '';
+  height: 0.65rem;
+  width: 0.65rem;
+  left: 1.7px;
+  bottom: 1.7px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #03256c;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #03256c;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(10px);
+  -ms-transform: translateX(10px);
+  transform: translateX(10px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 2rem;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.filled {
+  margin-top: 2rem;
+}
+
+.deleted {
+  justify-content: flex-end;
+}
+
+.btn.delete {
+  margin-right: 14rem;
+  background-color: #fff;
+  color: #f42424;
+  border: 1px solid #f42424;
+  font-weight: bold;
+}
+
+.btn.delete img {
+  margin-right: 0.3rem;
+}

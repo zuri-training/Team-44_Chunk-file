@@ -1,0 +1,86 @@
+.about,
+.value,
+.subscribe {
+  max-width: 85vw;
+  margin: 0 auto;
+}
+.about,
+.trusted,
+.value,
+.subscribe {
+  margin-top: 7.5rem;
+}
+.about h1,
+h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+h2 {
+  font-size: 1.5rem;
+}
+.value__boxes {
+  margin-top: 4rem;
+  gap: 2rem;
+  justify-content: center;
+  text-align: center;
+}
+.recycle {
+  margin-bottom: 2rem;
+  flex-direction: column-reverse;
+}
+.value__boxes div:nth-of-type(odd) p {
+  margin-top: 2rem;
+}
+.value__box {
+  flex: 0.3;
+}
+.value__box p {
+  line-height: 1.5;
+}
+.value__box img {
+  margin-bottom: 2rem;
+}
+.recycle img {
+  margin: 0;
+  margin-bottom: 1rem;
+}
+.image {
+  background-color: #03256c;
+  justify-content: space-evenly;
+  padding-top: 1.5rem;
+}
+.image img {
+  padding-top: 1.5rem;
+}
+.subscribe {
+  /* gap: 1rem; */
+  margin-top: 2rem;
+  justify-content: space-between;
+}
+.form__input {
+  background-color: #d2d2d2;
+  padding: 0.5rem;
+  border-radius: 0.2rem;
+  border: 1px solid #e5e5e5;
+  outline: none;
+  font-family: inherit;
+  font-size: inherit; /* width: 100%; */
+}
+#fullname {
+  width: 15rem;
+}
+#email {
+  width: 40rem;
+}
+.sub {
+  width: 15rem;
+  padding: 0.6rem;
+}
+.form__input:hover {
+  border-color: black;
+}
+.form__input:focus {
+  border-color: #4d4d4da4;
+  background-color: #fff;
+  outline: none;
+}

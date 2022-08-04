@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/auth.css" />
+    <link rel="stylesheet" href="../styles/signUp.css" />
+    <title>Document</title>
+  </head>
+  <body class="flex_c">
+    <main class="container flex_c">
+      <div class="left flex_c">
+        <img src="../Images/amico.png" alt="amico" />
+      </div>
+      <div class="right flex_c">
+        <form action="/" method="get">
+          <h1>Create Account</h1>
+          <div class="form">
+            <input
+              type="text"
+              id="email"
+              class="form__input"
+              autocomplete="off"
+              placeholder=" "
+            />
+            <label for="email" class="form__label">Email Address</label>
+          </div>
+          <div class="form">
+            <input
+              type="text"
+              id="fullname"
+              class="form__input"
+              autocomplete="off"
+              placeholder=" "
+            />
+            <label for="fullname" class="form__label">Full Name</label>
+          </div>
+          <div class="form">
+            <input
+              type="password"
+              id="password"
+              class="form__input"
+              autocomplete="off"
+              placeholder=" "
+            />
+            <label for="password" class="form__label">Password</label>
+          </div>
+          <div class="form">
+            <input
+              type="password"
+              id="c_password"
+              class="form__input"
+              autocomplete="off"
+              min="8"
+              placeholder=" "
+            />
+            <label for="password" class="form__label">Confirm Password</label>
+          </div>
+          <div class="check">
+            <input type="checkbox" name="checkbox" id="check" />
+            <small
+              >I have read and accepted the
+              <strong>Terms & Conditions</strong> to Chunkeet</small
+            >
+          </div>
+          <div class="sign_btn">
+            <button class="btn btn-sign">Sign Up</button>
+            <p>
+              Already have an Account? <a href="../pages/login.html">Sign In</a>
+            </p>
+          </div>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>

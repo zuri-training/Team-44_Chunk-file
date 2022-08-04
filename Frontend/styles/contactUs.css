@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: 'Sora', sans-serif;
+    background-color: #fff;
+}
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2em 0;
+    border-bottom: 0.1px solid #eeeeee;
+}
+
+.header a {
+    text-decoration: none;
+    color: #1D1D1D;
+    font-weight: 400;
+    font-size: 1rem;
+    padding-left: 2rem;
+}
+
+.headerButton {
+    display: flex;
+    justify-content: space-between;
+    gap: 2.19rem;
+}
+
+header button {
+    padding: 0.9rem 2.5rem;
+    font-weight: 600;
+    font-size: 1rem;
+    border-radius: 4px;
+    border: none;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 9rem;
+}
+
+.contactTitle {
+    text-align: center;
+    padding: 7.88rem 0;
+}
+
+.contactTitle h1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.contactTitle p {
+    font-size: 1.75rem;
+    font-weight: 400;
+}
+
+input {
+    padding: 0.88rem 0.63rem;
+    width: 25rem;
+}
+
+textarea {
+    width: 37.5rem;
+    height: 17.5rem;
+    border: 1px solid #989898;
+}
+
+.contactContent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 35px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2.5rem;
+}
+
+.formButton{
+    align-self: flex-end;
+}
+
+.formButton button {
+    padding: 0.69rem 2.69rem;
+    font-weight: 600;
+    font-size: 1rem;
+    border-radius: 4px;
+    border: none;
+}
+
+.meetUs {
+    
+}
+
+.meetContent {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    width: 50%;
+    margin: 0 auto;
+    padding: 3.75rem 3.12rem 2.13rem;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3), 0px 2px 6px 2px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+}
+
+.meetIcon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    margin-bottom: 2.06rem;
+    border-radius: 50%;
+}
+
+.meetUsLink {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+footer {
+    margin-top: 10.56rem;
+}
+
+.footerContent {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.32rem 13.13rem 1.5rem 6.88rem;
+}
+
+.footerDesc {
+    width: 40%;
+    padding-top: 1rem;
+}
+
+.footerInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: stretch;
+}
+
+.footerInfo a {
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-right: 1.88rem;
+    border-radius: 50%;
+}
+
+.usefulLinks h3 {
+    padding-top: 2.5rem;;
+}
+.usefulLinks p, .usefulLinks h3 {
+    padding-bottom: 2.38rem;
+}
+
+.usefulLinks img {
+    padding: 0 0.5rem;
+}
+
+.footerBottom {
+    text-align: center;
+    padding: 1.25rem 0;
+}
+
+.bgWhite {
+    background-color: #fff;
+}
+
+.bgNavy {
+    background-color: #032262;
+}
+
+.bgBlack {
+    background-color: #1D1D1D;
+}
+
+.bgSkyblue {
+    background-color: #06BEE1;
+}
+
+.bgGrey {
+    background-color: #E5E5E5;
+}
+
+.white {
+    color: #fff;
+}
+
+.blue {
+    color: #032262;
+}
+
+.blueBorder {
+    border: 1px solid #032262;
+}
+
+.bgDeepBlue {
+    background-color: #02143B;
+}
