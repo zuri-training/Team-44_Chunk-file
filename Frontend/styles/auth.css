@@ -18,6 +18,11 @@ body {
   max-width: 100vw;
 }
 
+a {
+  text-decoration: none;
+  color: #03256c;
+}
+
 .container {
   flex-wrap: wrap;
   max-width: 100vw;
@@ -108,9 +113,9 @@ reduce the size of the label and move upwards
   top: -0.85rem;
   font-size: 1rem;
   left: 0.8rem;
-  padding: 0.3rem;
+  /* padding: 0.3rem; */
   z-index: 10;
-  background-color: #fff;
+  background-color: transparent;
   color: #383838;
 }
 
