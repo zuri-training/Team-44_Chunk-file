@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../styles/general.css" />
     <link rel="stylesheet" href="../styles/index.css" />
     <title>Chunkeet || A Website to split and convert CSV and JSON files</title>
   </head>
@@ -20,14 +19,14 @@
       <div class="desktop__navigations flex_c">
         <nav class="nav__bar">
           <ul class="flex_c">
-            <li><a href="../pages/index.html" class="active">Home</a></li>
-            <li><a href="../pages/contactUs.html">Contact Us</a></li>
-            <li><a href="../pages/aboutUs.html">About Us</a></li>
+            <li><a href="./index.html" class="active">Home</a></li>
+            <li><a href="./contactUs">Contact Us</a></li>
+            <li><a href="./aboutUs">About Us</a></li>
           </ul>
         </nav>
         <div class="buttons flex_c">
-          <a href="../pages/login.html" class="btn unfilled">Sign In</a>
-          <a href="../pages/signup.html" class="btn filled">Sign Up</a>
+          <a href="./login.html" class="btn unfilled">Sign In</a>
+          <a href="./signup.html" class="btn filled">Sign Up</a>
         </div>
       </div>
       <!-- <div class="mobile__navigations">
@@ -55,102 +54,204 @@
         </div>
         <div class="image"></div>
       </section>
-      <section class="documentation">
-        <h2>What are CSV and JSON files</h2>
-        <div class="csv">
-          <h3>CSV Files</h3>
+      <section class="what flex_c">
+        <div class="what__headings">
+          <h2>What is Chunkeet</h2>
           <p>
-            A CSV file is information seperated using commas, It’s a way to
-            exchange structured information, like the contents of a spreadsheet.
-            We offer splitting and conversion of CSV files. This tool allows you
-            to split large CSV files into smaller files based on your
-            specicification. There is no limit of files to split. The only
-            constraints are the browser, your computer and the optimized code of
-            this tool.
+            Chunkeet is a platform that accepts large CSV and JSON files and
+            breaks them into smaller bits while maintaining the right format.
+            The platform allows authenticated users, to upload their large
+            files, chunk it into bits and download to their local device.
           </p>
+          <div class="what__learn-more">
+            <a href="./faq.html" class="btn filled learn_more">Learn More</a>
+          </div>
         </div>
-        <div class="json">
-          <h3>JSON Files</h3>
-          <p>
-            Json (javascript object notation) is a simple text-based open
-            standard file format and data interchange format that uses
-            human-readable text to store and transmit data objects consisting of
-            attribute-value pairs snd arrays (or other serializable values). it
-            is common data format with diverse uses in electronic data
-            interchange, including that of web applications with servers. JSON
-            filenames use the extension .json. Files
-          </p>
-        </div>
-        <div class="use__csv">
-          <h3>Why should you split your CSV files?</h3>
-          <p>
-            The CSV format has several advantages, for example it is very
-            concise and takes up less space than the JSON and XML formats. Then
-            it is very readable, we immediately see the data that are
-            associated. Different variations of seperators can be used for
-            example, sometimes a tabulation is used, but in this case these
-            files are called TSV (Tab Seperated Values). Some systems can only
-            process a limited size of file and that’s more reason why you need
-            to CHUNKEET
-          </p>
+        <div class="what__image"></div>
+      </section>
+      <section class="choose__us">
+        <div class="choose__us-wrapper">
+          <div class="choose__us-content">
+            <h2>Why you should choose chunkeet</h2>
+            <p>
+              See all the special features Chunkeet brings to you, what makes us
+              stand out from your regular Chunking website
+            </p>
+          </div>
+          <div class="choose__us-boxes">
+            <div class="box">
+              <img src="../Images/owndashboard.png" alt="dash icon" />
+              <div class="box__content">
+                <h3>Your Own Dashboard</h3>
+                <p>
+                  You get your very own aesthetically pleasing dashboard which
+                  is user friendly and has everything you’ll need
+                </p>
+              </div>
+            </div>
+            <div class="box">
+              <img src="../Images/enhanced_encryption.png" alt="lock icon" />
+              <div class="box__content">
+                <h3>Save for Later</h3>
+                <p>
+                  When you’re done chunking you can always come back to your
+                  files in future provided you have a chunkeet account.
+                </p>
+              </div>
+            </div>
+            <div class="box">
+              <img src="../Images/not_interested.png" alt="no ads icon" />
+              <div class="box__content">
+                <h3>No Ads</h3>
+                <p>
+                  Tired of Ads? Well, Chunkeet is completely free and devoid of
+                  Ads. Our platform provides a clean experience
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
-      <section class="features">
-        <h2>Special features</h2>
-        <p>
-          See all the special features Chunkeet brings to you, what makes us
-          stand out from your regular Chunking website
-        </p>
-        <div class="feature__boxes flex_c">
-          <div class="feature__box">
-            <img src="../Images/laptop.png" alt="laptop showing a dashboard" />
-            <h3>Your Own Dashboard</h3>
-            <p>
-              You get your very own aesthetically pleasing dashboard which is
-              user friendly and has everything you’ll need
-            </p>
-          </div>
-          <div class="feature__box">
-            <img src="../Images/save.png" alt="A vault" />
-            <h3>Save for Later</h3>
-            <p>
-              When you’re done chunking you can come back to your files in
-              future. Once your account is created you have access to store.
-            </p>
-          </div>
-          <div class="feature__box">
-            <img src="../Images/No ads.png" alt="No Ads" />
-            <h3>No Ads</h3>
-            <p>
-              Tired of Ads? Well, Chunkeet is completely free and devoid of Ads.
-              Our platform provides a clean experience
-            </p>
-          </div>
+      <section class="steps">
+        <div class="steps__button flex_c">
+          <button class="btn filled">Split CSV/JSON Files</button>
+          <button class="btn grey">Convert JSON to CSV</button>
+          <button class="btn grey">Convert CSV to JSON</button>
+        </div>
+        <div class="step">
+          <ol class="step__list">
+            <li>
+              Tap on the “Register” button to get started on your account or Log
+              in to continue.
+            </li>
+            <li>
+              Select your files and upload it or drag and drop into the “Upload
+              file box” on your dashboard.
+            </li>
+            <li>
+              Choose the number of header lines you want your file to be
+              splitted.
+            </li>
+            <li>Click on the “Split File” button.</li>
+            <li>
+              Once your file has been splitted, you can
+              <span> “Download and Delete”</span> or
+              <span>“Save for later”</span>.
+            </li>
+          </ol>
         </div>
       </section>
       <section class="services">
-        <h2>Our Services</h2>
-        <p>
-          Chunkeet offers the following services for free, all these and more
-        </p>
-        <div class="service__boxes flex_c">
-          <div class="service__box">
-            <img src="../Images/globe.png" alt="globe image" />
+        <div class="services__wrapper">
+          <div class="services__content">
+            <h2>Our Services</h2>
             <p>
-              Splitting your CSV and JSON files has never been easier,
-              everything is done straight from your dashboard
+              Chunkeet offers the following services for free, all these and
+              more
             </p>
           </div>
-          <div class="service__box">
-            <img src="../Images/drive.png" alt="drive image" />
-            <p>Access to a log of your split and converted files.</p>
+          <div class="service__boxes">
+            <div class="services_box">
+              <img
+                src="../Images/horizontal_split.png"
+                alt="split icon"
+                class="horin"
+              />
+              <h3>We Split</h3>
+              <p>
+                Splitting your CSV and JSON files has never been easier,
+                everything is done straight from your dashboard
+              </p>
+            </div>
+            <div class="services_box">
+              <img
+                src="../Images/lock_open.png"
+                alt="lock icon"
+                class="lock_open"
+              />
+              <h3>Easy Access</h3>
+              <p>
+                Access to a log of your split and converted files. Easily
+                accessiable and user friendly navigations
+              </p>
+            </div>
+            <div class="services_box">
+              <img
+                src="../Images/privacy_tip.png"
+                alt="shield icon"
+                class="shield"
+              />
+              <h3>Privacy guaranteed</h3>
+              <p>
+                Your data is collected and processed directly in your browser
+                ensuring privacy, security, and file integrity.
+              </p>
+            </div>
           </div>
-          <div class="service__box">
-            <img src="../Images/lock.png" alt="lock image" />
+        </div>
+      </section>
+      <section class="testimonials">
+        <div class="testimonials__content">
+          <h2>Testimonials</h2>
+          <p>What our users say about Chunkeet</p>
+        </div>
+        <div class="testimonial_boxes">
+          <div class="testimonial_box">
+            <img src="../Images/quote.png" alt="quote icon" />
             <p>
-              Your data is collected and processed directly in your browser
-              ensuring privacy, security, and file integrity.
+              Splitting my large files just became easier with chunkeet. I have
+              been able to split my files into smaller usable chunks and i can
+              download and access it, at a later time.
             </p>
+            <div class="testimonial_profile">
+              <img src="../Images/Adah.png" alt="adah" />
+              <div class="content_test">
+                <h4>Adah Jonathan</h4>
+                <small>Data Analyst</small>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial_box">
+            <img src="../Images/quote.png" alt="quote icon" />
+            <p>
+              Your file privacy is guaranteed on chunkeet. Your can download
+              your splitted file and erase it from the platform and not be
+              bothered about who has accessed or not.
+            </p>
+            <div class="testimonial_profile">
+              <img src="../Images/Ayo.png" alt="Ayo icon" />
+              <div class="content_test">
+                <h4>Ayo Olowoshile</h4>
+                <small>Software Engineer</small>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial_box">
+            <img src="../Images/quote.png" alt="quote icon" />
+            <p>
+              With chunkeet i’m in control. I can choose the number of rows i
+              want per file, i can check for my files on the dashboard and i can
+              delete my files anytime.
+            </p>
+            <div class="testimonial_profile">
+              <img src="../Images/Tobi.png" alt="tobi icon" />
+              <div class="content_test">
+                <h4>Tobi Micheal</h4>
+                <small>Programmer</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="file">
+        <div class="file__wrapper">
+          <h2>File Splitting Made Easier With Chunkeet</h2>
+          <p>
+            Split your large CSV/JSON file using just five easy steps. Split
+            your large file now by just clicking the sign up button.
+          </p>
+          <div class="get_started neon">
+            <a href="#" class="btn filled get-started"> Get Started</a>
           </div>
         </div>
       </section>
