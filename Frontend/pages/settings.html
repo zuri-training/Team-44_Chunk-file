@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Check your mail</title>
+    <link rel="stylesheet" href="../styles/settings.css" />
+  </head>
+  <body>
+    <main class="container flex_c">
+      <section class="left flex_c">
+        <nav>
+          <div class="logo flex_c">
+            <div class="logo__img flex_c">
+              <img src="../Images/Ellipse 13.png" class="blue" alt="logo icon" />
+              <img
+                src="../Images/Ellipse 14.png"
+                class="light"
+                alt="logo icon"
+              />
+            </div>
+            <p>Chun<span class="keet">keet</span></p>
+          </div>
+          <ul class="nav__items">
+            <li class="nav__item">
+              <img
+                src="../Images/dashboard icon.png"
+                alt="dashboard icon"
+              />Dashboard
+            </li>
+            <li class="nav__item">
+              <img src="../Images/storage icon.png" alt="storage icon" />Storage
+            </li>
+            <li class="nav__item">
+              <img src="../Images/draft.png" alt="draft icon" />Draft
+            </li>
+            <li class="nav__item active">
+              <img src="../Images/settings.png" alt="settings icon" />Settings
+            </li>
+          </ul>
+        </nav>
+        <div class="logout flex_c">
+          <ul>
+            <li class="nav__item">
+              <img src="../Images/logout icon.png" alt="logout icon" />Log out
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="right">
+        <h1>Profile Details</h1>
+        <div class="profile">
+          <div class="profile-head flex_c">
+            <img src="../Images/User Image.png" alt="user image" />
+            <div class="profile__button flex_c">
+              <button class="btn filled flex_c">
+                <img src="../Images/change icon.png" alt="change icon" />Change
+                profile picture
+              </button>
+              <button class="btn unfilled flex_c">
+                <img src="../Images/delete icon.png" alt="delete icon" />Delete
+                picture
+              </button>
+            </div>
+          </div>
+        </div>
+        <form action="">
+          <div class="emails">
+            <div class="name">
+              <div class="form">
+                <input
+                  type="text"
+                  id="firstname"
+                  class="form__input"
+                  autocomplete="off"
+                  placeholder=" "
+                  required
+                />
+                <label for="firstname" class="form__label">First Name</label>
+              </div>
+              <div class="form">
+                <input
+                  type="text"
+                  id="lastname"
+                  class="form__input"
+                  autocomplete="off"
+                  placeholder=" "
+                  required
+                />
+                <label for="lastname" class="form__label">Last Name</label>
+              </div>
+            </div>
+            <div class="email">
+              <div class="form">
+                <input
+                  type="email"
+                  id="email"
+                  class="form__input"
+                  autocomplete="off"
+                  placeholder=" "
+                  required
+                />
+                <label for="email" class="form__label">Email Address</label>
+              </div>
+            </div>
+          </div>
+          <div class="passwords">
+            <h2>Change password</h2>
+            <div class="old_password">
+              <div class="form">
+                <input
+                  type="password"
+                  id="old__password"
+                  class="form__input"
+                  autocomplete="off"
+                  placeholder=" "
+                  required
+                />
+                <label for="password" class="form__label">Old Password</label>
+              </div>
+            </div>
+            <div class="set__password">
+              <div class="form">
+                <input
+                  type="password"
+                  id="new__password"
+                  class="form__input"
+                  autocomplete="off"
+                  min="8"
+                  placeholder=" "
+                  required
+                />
+                <label for="password" class="form__label">New password</label>
+              </div>
+              <div class="form">
+                <input
+                  type="password"
+                  id="c__password"
+                  class="form__input"
+                  autocomplete="off"
+                  min="8"
+                  placeholder=" "
+                  required
+                />
+                <label for="password" class="form__label"
+                  >Confirm Password</label
+                >
+              </div>
+            </div>
+          </div>
+          <div class="notifications">
+            <h2>Notifications</h2>
+            <div class="notification flex_c">
+              <div class="notification__email flex_c">
+                <small>By email</small>
+                <label class="switch">
+                  <input type="checkbox" />
+                  <span class="slider round"></span>
+                </label>
+              </div>
+              <div class="notification__desktop flex_c">
+                <small>On your Desktop</small>
+                <label class="switch">
+                  <input type="checkbox" />
+                  <span class="slider round"></span>
+                </label>
+              </div>
+            </div>
+            <button type="submit" class="btn filled">Update</button>
+          </div>
+          <div class="deleted flex_c">
+            <button class="btn delete">
+              <img src="../Images/delete red.png" alt="delete icon" />Delete
+              account
+            </button>
+          </div>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
