@@ -24,11 +24,6 @@ body {
   max-width: 100vw;
 }
 
-a {
-  text-decoration: none;
-  color: #03256c;
-}
-
 .left {
   padding: 3rem 0 3rem 3rem;
   flex: 0.2;
@@ -125,9 +120,15 @@ h2 {
 .drag {
   align-items: flex-start;
 }
-.drag-area.active {
-  border: 2px solid #fff;
+
+.drag-area.hover {
+  border: 2px dashed greenyellow;
 }
+
+.drag-area.error {
+  border: 2px dashed orangered;
+}
+
 .drag-area header {
   font-size: 30px;
   font-weight: 500;

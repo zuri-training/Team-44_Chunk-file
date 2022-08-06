@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../styles/newUserDashboard.css" />
+    <link rel="stylesheet" href="../styles/newUserDashboad.css" />
+    <script src="../javascripts/drag.js" defer></script>
 
     <title>Document</title>
   </head>
@@ -41,10 +42,7 @@
               <img src="../Images/draft.png" alt="draft icon" />Draft
             </li>
             <li class="nav__item">
-              <img src="../Images/settings.png" alt="settings icon" /><a
-                href="../pages/settings.html"
-                >Settings</a
-              >
+              <img src="../Images/settings.png" alt="settings icon" />Settings
             </li>
           </ul>
         </nav>
@@ -70,17 +68,19 @@
         </div>
         <div class="upload">
           <h2>Upload Files</h2>
-          <div class="drag-area">
-            <div class="img">
-              <img src="../Images/upload.png" alt="upload" />
+          <form method="post" class="upload">
+            <div class="drag-area">
+              <div class="img">
+                <img src="../Images/upload.png" alt="upload" />
+              </div>
+              <div class="drag flex_c">
+                <h3>Drag & Drop to Upload File; or</h3>
+                <button>Browse</button>
+                <input type="file" hidden />
+              </div>
+              <small>Supports only CSV and JSON files only</small>
             </div>
-            <div class="drag flex_c">
-              <h3>Drag & Drop to Upload File; or</h3>
-              <button>Browse</button>
-              <input type="file" hidden />
-            </div>
-            <small>Supports only CSV and JSON files only</small>
-          </div>
+          </form>
         </div>
         <div class="files">
           <h2>Split Files</h2>
