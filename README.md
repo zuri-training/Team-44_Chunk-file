@@ -24,31 +24,43 @@ We are building a platform that accepts CSV or JSON large files, and breaks them
    10. Save temporarily in Draft.
 
    ## Help
+
    FAQs
+
 1. What is CSV?
 A CSV file is information seperated using commas, It’s a way to exchange structured information, like the contents of a spreadsheet. Due to its simplicity, CSV can be used by virtually anyone who examines data in spreadsheets and tables. We offer splitting and conversion of CSV files. This tool allows you to split large CSV files into smaller files based on your specicification.
+
 2. What is JSON?
 JSON is an open standard file format for sharing Data that uses human-readable text to store and transmit data. It is a general data format used with different applications, including web applications. It is a lightweight format for storing and transporting data. Web Developers use JSON to transmit data from the server to the web browser and from the web browser back to the server.
+
 3. Why do I need to split CSV?
 Some systems are limited in terms of the size of data they can process. In this case, it is then necessary to split the CSV/JSON files so that they are processed. In other cases, the limitation is at the level of the sending of the data (although a compressed CSV normally takes up little space, the text being easily compressed).
+
 4. How do I split my CSV files?
 To split your CSV file, follow these simple steps:
 Sign in to your dashboard (if you don’t have an account, create one and Sign in)
 Uplaod the CSV file(s) to our servers for splitting
 Download or save your chunked files
+
 5. How do I split my JSON files?
 To split your JSON file, follow these simple steps:
 Sign in to your dashboard (if you don’t have an account, create one and Sign in)
 Uplaod the JSON file(s) to our servers for splitting
 Download or save your chunked files
+
 6. Are my files stored on the site?
 Every user is given the option to have their chunked files stored on our servers. The storage of chunked files is not automatic and is at the choice of each user. Files not saved will be kept in the drafts on the dashboard for a very limited amount of time.
-How long are files stored on the site?
-Are my stored files secure?
-What is the maximum file upload size?
+
+7. How long are files stored on the site?
+Draft files are stored for 24 hour only.
+The files in Storage are saved for 72 hours.
+
+8. Are my stored files secure?
+YES. Every action happens on your local system. it doesnt go to our Database.
+
+9. What is the maximum file upload size?
 
 
- 
 
 ### What are CSV Files?
 A comma-separated values (CSV) file is a delimited text file that uses a comma to separate values. Each line of the file is a data record. Each record consists of one or more fields, separated by commas. The use of the comma as a field separator is the source of the name for this file format. A CSV file typically stores tabular data (numbers and text) in plain text, in which case each line will have the same number of fields. [title](https://www.https://en.wikipedia.org/wiki/Comma-separated_values#:~:text=A%20comma%2Dseparated%20values%20(CSV,name%20for%20this%20file%20format.com)
@@ -139,3 +151,4 @@ After chunking their files, the platform gives the users an option to “Downloa
 
 We use HTML, CSS, and JavaScript to create our websites. Our client-side code is very modular and can be easily consumed by modern front-end technologies. We also use Django for authentication purposes. Our back-end is built using Python/Django with a PostgreSQL database.
 
+## Authors.
