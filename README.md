@@ -1,7 +1,53 @@
 # Chunk File Project Team 44
 ---
 ## Introduction
-We are building a platform that accepts CSV or JSON large files, and breaks them into smaller bits and still maintains the right format.In addition, we are going to add a conversion feature to change CSV to JSON and JSON to CSV and possibly a button to send to mail. The pages are going to have a light and dark mode
+We are building a platform that accepts CSV or JSON large files, and breaks them into smaller bits and still maintains the right format.In addition, we are going to add a conversion feature to change CSV to JSON and JSON to CSV and possibly a button to send to mail. The pages are going to have a light and dark mode\
+
+## Dependencies
+ This platform can be accessed using any operating system and is available on mobile and Pc.
+  This platform is designed to be intuitive and easy to use across any operating system
+  We invite you to explore our website, learn about our products and services, and get in touch with us if you have any questions.
+
+  ## Installation
+   The platform utilizes a simple setup and requires no installation. It can be accessed through an internet browser or downloaded to any computer.The platform is available to all users in a secure environment with no download required.
+
+   ## Execution
+   1. Go to www.chunkeet.com
+   2. Register or Sign Up
+   3. Go to Dashboard
+   4. Drag and Drop file or Browse file
+   5. Input chunking Parameters
+   6. Chunk file
+   7. Finish chunking
+   8. Save chunked file to Storage
+   9. Download chunked file to User local Storage
+   10. Save temporarily in Draft.
+
+   ## Help
+   FAQs
+1. What is CSV?
+A CSV file is information seperated using commas, It’s a way to exchange structured information, like the contents of a spreadsheet. Due to its simplicity, CSV can be used by virtually anyone who examines data in spreadsheets and tables. We offer splitting and conversion of CSV files. This tool allows you to split large CSV files into smaller files based on your specicification.
+2. What is JSON?
+JSON is an open standard file format for sharing Data that uses human-readable text to store and transmit data. It is a general data format used with different applications, including web applications. It is a lightweight format for storing and transporting data. Web Developers use JSON to transmit data from the server to the web browser and from the web browser back to the server.
+3. Why do I need to split CSV?
+Some systems are limited in terms of the size of data they can process. In this case, it is then necessary to split the CSV/JSON files so that they are processed. In other cases, the limitation is at the level of the sending of the data (although a compressed CSV normally takes up little space, the text being easily compressed).
+4. How do I split my CSV files?
+To split your CSV file, follow these simple steps:
+Sign in to your dashboard (if you don’t have an account, create one and Sign in)
+Uplaod the CSV file(s) to our servers for splitting
+Download or save your chunked files
+5. How do I split my JSON files?
+To split your JSON file, follow these simple steps:
+Sign in to your dashboard (if you don’t have an account, create one and Sign in)
+Uplaod the JSON file(s) to our servers for splitting
+Download or save your chunked files
+6. Are my files stored on the site?
+Every user is given the option to have their chunked files stored on our servers. The storage of chunked files is not automatic and is at the choice of each user. Files not saved will be kept in the drafts on the dashboard for a very limited amount of time.
+How long are files stored on the site?
+Are my stored files secure?
+What is the maximum file upload size?
+
+
  
 
 ### What are CSV Files?
