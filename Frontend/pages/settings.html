@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Check your mail</title>
     <link rel="stylesheet" href="../styles/settings.css" />
+    <link rel="stylesheet" href="../styles/sidebar.css" />
   </head>
   <body>
     <main class="container flex_c">
@@ -13,7 +14,11 @@
         <nav>
           <div class="logo flex_c">
             <div class="logo__img flex_c">
-              <img src="../Images/Ellipse 13.png" class="blue" alt="logo icon" />
+              <img
+                src="../Images/Ellipse 13.png"
+                class="blue"
+                alt="logo icon"
+              />
               <img
                 src="../Images/Ellipse 14.png"
                 class="light"
@@ -22,21 +27,31 @@
             </div>
             <p>Chun<span class="keet">keet</span></p>
           </div>
+
           <ul class="nav__items">
             <li class="nav__item">
-              <img
-                src="../Images/dashboard icon.png"
-                alt="dashboard icon"
-              />Dashboard
+              <img src="../Images/dashboard icon.png" alt="dashboard icon" /><a
+                href="./oldUserDashboard.html"
+                >Dashboard
+              </a>
             </li>
             <li class="nav__item">
-              <img src="../Images/storage icon.png" alt="storage icon" />Storage
+              <img src="../Images/storage icon.png" alt="storage icon" /><a
+                href="./storagePage.html"
+                >Storage
+              </a>
             </li>
             <li class="nav__item">
-              <img src="../Images/draft.png" alt="draft icon" />Draft
+              <img src="../Images/draft.png" alt="draft icon" /><a
+                href="./draftPage.html"
+                >Draft
+              </a>
             </li>
             <li class="nav__item active">
-              <img src="../Images/settings.png" alt="settings icon" />Settings
+              <img src="../Images/settings.png" alt="settings icon" /><a
+                href="./settings.html"
+                >Settings
+              </a>
             </li>
           </ul>
         </nav>

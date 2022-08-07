@@ -90,6 +90,11 @@ h1 {
   margin: 1rem 0 1.3rem;
 }
 
+a {
+  color: #03256c;
+  text-decoration: none;
+}
+
 .right {
   flex: 0.8;
   min-height: 100vh;
