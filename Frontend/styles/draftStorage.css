@@ -1,0 +1,22 @@
+body {
+  overflow: hidden;
+}
+
+.container {
+  margin-top: 2rem;
+}
+
+.right {
+  max-width: 70vw;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.nothing__box {
+  margin-top: 10rem;
+}
+
+a {
+  color: #03256c;
+  text-decoration: none;
+}
