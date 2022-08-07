@@ -69,13 +69,18 @@ The name of our Project is “Chunkeet” and it was coined from two English wor
 Now, Chunkeet is a website that helps people chunk their large CSV and JSON Files into smaller bits without having their files altered.
 
 Our Team has added great features on the website to ensure a good User Experience. Some of the Unique features we get to provide to the users are;
-Splitting of CSV and JSON files.
-Conversion of CSV to JSON files and vice versa
-Providing Users a website with great User Interface and User Experience.
-A save to download later option.
-Ad free website, many websites that are doing what we are doing hardly provide an ad free website which is always frustrating to the Users.
-Registered Users get to have his/her own dashboard so as to enjoy other benefits on our websites.
-We included a dark mode for users that prefers the dark mode to light mode.
+1. Splitting of CSV and JSON files.
+
+2. Conversion of CSV to JSON files and vice versa
+
+3. Providing Users a website with great User Interface and User Experience.
+
+4. A save to download later option.
+
+5. Ad free website, many websites that are doing what we are doing hardly provide an ad free website which is always frustrating to the Users.
+6. Registered Users get to have his/her own dashboard so as to enjoy other benefits on our websites.
+
+7. We included a dark mode for users that prefers the dark mode to light mode.
 
 ### HOW OUR WEBSITES WORKS
 We built our website in such a way that users will need to have a registered account with us to be able to chunk their files and enjoy other benefits such as conversion of CSV to JSON and vice versa.
@@ -93,3 +98,12 @@ After chunking their files, the platform gives the users an option to “Downloa
 
 We use HTML, CSS, and JavaScript to create our websites. Our client-side code is very modular and can be easily consumed by modern front-end technologies. We also use Django for authentication purposes. Our back-end is built using Python/Django with a PostgreSQL database.
 
+<<<<<<< Updated upstream
+=======
+## Authors.
+
+1. @iyaji1883
+2. @samadeen
+3. @Damidesigns
+4. @jonathan-Tech-Sudo
+>>>>>>> Stashed changes
