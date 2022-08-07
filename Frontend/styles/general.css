@@ -129,9 +129,44 @@ a {
   justify-content: space-between;
 }
 
+.form__input {
+  background-color: #d2d2d2;
+  padding: 0.5rem;
+  border-radius: 0.2rem;
+  border: 1px solid #e5e5e5;
+  outline: none;
+  font-family: inherit;
+  font-size: inherit;
+  /* width: 100%; */
+}
+
+#fullname {
+  width: 15rem;
+}
+
+#email {
+  width: 40rem;
+}
+
+.sub {
+  width: 15rem;
+  padding: 0.6rem;
+}
+
+.form__input:hover {
+  border-color: black;
+}
+
+.form__input:focus {
+  border-color: #4d4d4da4;
+  background-color: #fff;
+  outline: none;
+}
+
 footer {
   background-color: #02143b;
   padding: 3rem 0 0;
+  margin-top: 7.5rem;
 }
 
 .footer__wrapper {
