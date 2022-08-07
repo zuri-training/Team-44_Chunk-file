@@ -1,0 +1,72 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block css_files %}
+<link rel="stylesheet" href="{% static 'styles/auth.css' %}">
+<link rel="stylesheet" href="{% static 'styles/login.css' %}">
+{% endblock %}
+
+{% block title %}
+Login
+{% endblock %}
+
+{% block content %}
+
+<body class="flex_c">
+  <main class="container flex_c">
+      <div class="left flex_c"><img src="{% static 'Images/pana.png' %}" alt="pana"></div>
+      <div class="right flex_c">
+          <form action="" method="POST">
+            {% csrf_token %}
+              <h1>Sign In</h1>
+              <div class="form">
+                <input
+                  type="text"
+                  id="email"
+                  class="form__input"
+                  autocomplete="off"
+                  placeholder=" "
+                  name = "email"
+                  required
+                />
+                <label for="email" class="form__label">Email Address</label>
+              </div>
+              <div class="form">
+                <input
+                  type="password"
+                  id="fullname"
+                  class="form__input"
+                  autocomplete="off"
+                  placeholder=" "
+                  name = "password"
+                  required
+                />
+                <label for="password" class="form__label">Password</label>
+              </div>
+              <div class="strong">
+                  {% comment %} <strong><a href="{% url 'reset_password' %}">Forgot Password?</a> </strong> {% endcomment %}
+              </div>
+
+              {% for field in registration_form %}
+              <p>
+              {% for error in field.errors %}
+              <p style="color: red">{{ error }}</p>
+              {% endfor %}
+              </p>
+              {% endfor %}
+              {% if registration_form.non_field_errors %}
+              <div style="color: red">
+                <p>{{registration_form.non_field_errors}}</p>
+              </div>
+      
+              {% endif %}
+
+
+              <div class="sign_btn flex_c">
+                  <button type= "submit" class="btn btn-sign">Sign In</button>
+                  <p>Don't have an Account? <a href="{% url 'signUp' %}">Create Account</a></p>
+                </div>
+      </div>
+  </main>
+</body>
+{% endblock %}
