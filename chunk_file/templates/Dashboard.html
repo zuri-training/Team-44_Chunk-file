@@ -1,0 +1,94 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+
+{% block title %}Dashboard{% endblock title %}
+{% block css_files %}
+  <link rel="stylesheet" href="{% static 'styles/Dashboard.css' %}" />
+  
+  <script src=" {% static 'javascripts/drag.js' %} " defer></script>
+{% endblock css_files %}
+
+{% block content %}
+{% comment %} {%for message in messages%}
+<div class="alert alert-{{message.tags}} alert-dismissible fade show" role= "alert">
+  <strong>Message:</strong> {{message}}
+  <button type="button" class="close" data-dismiss="alert" aria-label="close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div> 
+{% endfor %}{% endcomment %}
+    <main class="container flex_c">
+      <section class="left flex_c">
+        <nav>
+          <div class="logo flex_c">
+            <div class="logo__img flex_c">
+              <img src="{% static 'Images/Ellipse 13.png' %}" class="blue" alt="logo icon" />
+              <img
+                src="{% static 'Images/Ellipse 14.png' %}"
+                class="light"
+                alt="logo icon"
+              />
+            </div>
+            <p>Chun<span class="keet">keet</span></p>
+          </div>
+          <ul class="nav__items">
+            <li class="nav__item active">
+              <a href="{% url 'dashboard' %}"><img
+                src="{% static 'Images/dashboard icon.png' %}"
+                alt="dashboard icon"
+              />Dashboard</a>
+            </li>
+            <li class="nav__item">
+              <img src="{% static 'Images/storage icon.png' %}" alt="storage icon" />Storage
+            </li>
+            <li class="nav__item">
+              <img src="{% static 'Images/draft.png' %}" alt="draft icon" />Draft
+            </li>
+            <li class="nav__item">
+             <a href="{% url 'settings' %}"><img src="{% static 'Images/settings.png' %}" alt="settings icon" />Settings</a> 
+            </li>
+          </ul>
+        </nav>
+        <div class="logout flex_c">
+          <ul>
+            <li class="nav__item">
+              <a href="{% url 'signOut' %}"><img src="{% static 'Images/logout icon.png' %}" alt="logout icon" />Log out</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="right">
+        <div class="mini__nav flex_c">
+          <img src="{% static 'Images/user profile small.png' %}" alt="user image" />
+          <div class="profile__details">
+            <p>You're successfully logged in as: <h3>{{request.user}}</h3></p>
+            <small><h5>{{user.email}}</h5></small>
+          </div>
+        </div>
+        <div class="recent">
+          <h1>No Recent Files</h1>
+          <small>You have not uploaded any files recently.</small>
+        </div>
+        <div class="upload">
+          <h2>Upload Files</h2>
+          <div class="drag-area">
+            <div class="img">
+              <img src="{% static 'Images/upload.png' %}" alt="upload" />
+            </div>
+            <div class="drag flex_c">
+              <h3>Drag & Drop to Upload File; or</h3>
+              <button>Browse</button>
+              <input type="file" hidden />
+            </div>
+            <small>Supports only CSV and JSON files only</small>
+          </div>
+        </div>
+        <div class="files">
+          <h2>Split Files</h2>
+          <small>You have ("0") split files ready</small>
+        </div>
+      </section>
+    </main>
+{% endblock content %}
