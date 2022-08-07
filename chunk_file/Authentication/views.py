@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect
 from django.http import HttpResponse
 from django.contrib.auth import login, logout,authenticate
-# from django.contrib.auth.decorators import login_required
+from django.contrib.auth.decorators import login_required
 from Authentication.forms import RegistrationForm,AccountAuthenticationForm
 
 # Create your views here.
@@ -83,7 +83,7 @@ def signOut(request):
 def index(request):
     return render(request, "index.html")
 
-# @login_required
+@login_required
 def userDashboard(request):
     return render(request, "Dashboard.html",)
 
@@ -99,18 +99,18 @@ def contactUs(request):
 def FAQ(request):
     return render(request,"faq.html")
 
-# @login_required
+@login_required
 def settings(request):
     return render(request, "settings.html")
 
-# @login_required
+@login_required
 def splitPage(request):
     return render(request, "splitComplete.html")
 
-# @login_required
+@login_required
 def UploadPage(request):
     return render(request, "uploadingPage.html")
 
-# @login_required
+@login_required
 def storage(request):
     return render(request, "storagePage.html")

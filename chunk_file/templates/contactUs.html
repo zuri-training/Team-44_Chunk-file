@@ -4,125 +4,194 @@
 {% block title %}Contact Us{% endblock title %}
 
 {% block css_files %}
-<link rel="stylesheet" href=" {% static 'styles/general.css' %} " />
- <link rel="stylesheet" href=" {% static 'styles/contactUs.css' %} ">
- 
+    <link rel="stylesheet" href=" {% static 'styles/contactUs.css' %} " />
+    <link rel="stylesheet" href=" {% static 'styles/general.css' %} " />
 {% endblock css_files %}
 
-{% block header %}
     <!--Navbar-->
-    <header class="header">
-      <div>
-          <a href="{% url 'index' %}"><img src="{% static 'Images/Logo.png' %}" alt="" srcset=""></a>
-
-      </div>
-      <div>
-          <a href="{% url 'index' %}">Home</a>
-          <a href="{% url 'contact' %}">Contact Us</a>
-          <a href="{% url 'aboutUs' %}">About Us</a>
-
-      </div>
-      <div class="headerButton">
-          <a href="{% url 'signIn' %}"><button class="blueBorder blue bgWhite">Sign in</button></a>
-          <a href="{% url 'signUp' %}"><button class="bgNavy white">Sign up</button></a>
-      </div>
-  </header>
-{% endblock header %}
-
-
-{% block content %}
-
-    <!-- Heading and Form -->
-    <section class="main">
-        <div class="contactTitle">
-            <h1>Contact Us</h1>
-            <p>We would love to hear from you.</p>
+{% block header %}    
+      <div class="logo flex_c">
+        <div class="logo__img flex_c">
+          <img src=" {% static 'Images/Ellipse 13.png' %} " class="blue" alt="logo icon" />
+          <img src=" {% static 'Images/Ellipse 14.png' %} " class="light" alt="logo icon" />
         </div>
-        <div class="contactContent">
-            <div>
-                <img src="{% static 'Images/amico_contact.png' %}" alt="" srcset="">
+        <p>Chun<span class="keet">keet</span></p>
+      </div>
+      <div class="desktop__navigations flex_c">
+        <nav class="nav__bar">
+          <ul class="flex_c">
+            <li><a href=" {% url 'index' %}">Home</a></li>
+            <li><a href=" {% url 'contact' %}" class="active">Contact Us</a></li>
+            <li><a href=" {% url 'aboutUs' %} ">About Us</a></li>
+            <li><a href=" {% url 'FAQ' %}">FAQs</a></li>
+          </ul>
+        </nav>
+        <div class="buttons flex_c">
+          <a href="{% url 'signIn' %}" class="btn unfilled">Sign In</a>
+          <a href="{% url 'signUp' %}" class="btn filled">Sign Up</a>
+        </div>
+      </div>
+      <!-- <div class="mobile__navigations">
+            <nav class="nav__bar">
+                <ul>
+                    <li>Home</li>
+                    <li>Contact Us</li>
+                    <li>About Us</li>
+                </ul>
+            </nav>
+            <div class="buttons">
+                <a href="#" class="btn unfilled"></a >
+                <a href="#" class="btn filled"></a >
+            </div>
+          </div> -->
+{% endblock header %}
+    <!-- Heading and Form -->
+{% block content %}
+    <main class="container">
+      <section class="main flex_c">
+        <div class="contact__title">
+          <h1>Contact Us</h1>
+          <p>We would love to hear from you.</p>
+        </div>
+        <div class="contact__content flex_c">
+          <div>
+            <img src=" {% static 'Images/amico_contact.png' %}" alt="contact image" />
+          </div>
+          <form class="forms">
+            <div class="form">
+              <input
+                type="text"
+                id="email"
+                class="form__input"
+                autocomplete="off"
+                placeholder=" "
+              />
+              <label for="email" class="form__label">Email Address</label>
             </div>
             <div class="form">
-                <div>
-                    <input type="text" placeholder="Full Name">
-                </div>
-                <div>
-                    <input type="text" placeholder="Email Address">
-                </div>
-                <div>
-                    <textarea rows="5" column="30"></textarea>
-                </div>
-                <div class="formButton">
-                    <button class="bgNavy white">Send Message</button>
-                </div>
+              <input
+                type="text"
+                id="fullname"
+                class="form__input"
+                autocomplete="off"
+                placeholder=" "
+              />
+              <label for="fullname" class="form__label" placeholder=" "
+                >Full Name</label
+              >
             </div>
+            <div>
+              <textarea
+                rows="5"
+                column="30"
+                placeholder="Enter Message"
+              ></textarea>
+            </div>
+            <div class="formButton send">
+              <button class="btn filled">Send Message</button>
+            </div>
+          </form>
         </div>
-    </section>
-    <section class="meetUs">
+      </section>
+      <section class="meetUs">
         <div class="meetContent bgGrey">
-            <div class="meetUsLink">
-                <div class="meetIcon bgWhite">
-                    <img src="{% static 'Images/location_on.png' %}" alt="" srcset="">
-                </div>
-                <div>
-                    <p>Our Address</p>
-                    <p>No 4 johndoe Street</p>
-                </div>
+          <div class="meetUsLink">
+            <div class="meetIcon bgWhite">
+              <img src=" {% static 'Images/location_on.png' %}" alt="location icon" />
             </div>
-            <div class="meetUsLink">
-                <div class="meetIcon bgWhite">
-                    <img src="{% static 'Images/email.png' %}" alt="" srcset="">
-                </div>
-                <div>
-                    <p>Email Address</p>
-                    <p>Chunkeet@gmail.com</p>
-                </div>
+            <div>
+              <p>Our Address</p>
+              <p>No 4 johndoe Street</p>
             </div>
-            <div class="meetUsLink">
-                <div class="meetIcon bgWhite">
-                    <img src="{% static 'Images/phone.png' %}" alt="" srcset="">
-                </div>
-                <div>
-                    <p>Phone Number</p>
-                    <p>+234 222277790</p>
-                </div>
+          </div>
+          <div class="meetUsLink">
+            <div class="meetIcon bgWhite">
+              <img src=" {% static 'Images/email.png' %} " alt="email icon" />
             </div>
+            <div>
+              <p>Email Address</p>
+              <p>Chunkeet@gmail.com</p>
+            </div>
+          </div>
+          <div class="meetUsLink">
+            <div class="meetIcon">
+              <img src=" {% static 'Images/phone.png' %} " alt="phone icon" />
+            </div>
+            <div>
+              <p>Phone Number</p>
+              <p>+234 222277790</p>
+            </div>
+          </div>
         </div>
-    </section>
+      </section>
+    </main>
 {% endblock content %}
-
-{% block footer %}
     <!--Footer-->
-    <footer class="bgDeepBlue white">
-        <div class="footerContent">
-            <div class="footerInfo">
-                <div>
-                    <img src="{% static 'Images/Logo.png' %}" alt="chunkeet-logo" srcset="">
-                    <p class="footerDesc">Chunkeet application we aim at accepting large file and breaking
-                        them into bits while maintaining the right format.
-                    </p>
-                </div>
-                <div>
-                    <a href="https://www.google.com"><img src="{% static 'Images/akar-icons_google-fill copy.png' %}" alt="" srcset=""></a>
-                    <a href="https://www.google.com"><img src="{% static 'Images/bxl_facebook.png' %}" alt="" srcset=""></a>
-                    <a href="https://www.google.com"><img src="{% static 'Images/bxl_twitter.png' %}" alt="" srcset=""></a>
-                </div>
-
+{% block footer %}
+      <div class="footer__wrapper">
+        <div class="left">
+          <div class="left__footer">
+            <div class="footer__logo logo flex_c">
+              <div class="logo__img">
+                <img
+                  src=" {% static 'Images/Ellipse 13.png' %}"
+                  class="blue"
+                  alt="logo icon"
+                />
+                <img
+                  src=" {% static 'Images/Ellipse 14.png' %} "
+                  class="light"
+                  alt="logo icon"
+                />
+              </div>
+              <p class="footer__chun">Chun<span class="keet">keet</span></p>
             </div>
-            <div class="usefulLinks">
-                <h3>Useful links</h3>
-                <p><a class="link"><img src="{% static 'Images/arrow copy.png' %}" alt="" srcset="">Home</a></p>
-                <p><a class="link"><img src="{% static 'Images/arrow copy.png' %}" alt="" srcset="">About Us</a></p>
-                <p><a class="link"><img src="{% static 'Images/arrow copy.png' %}" alt="" srcset="">Contact Us</a></p>
-                <p><a class="link"><img src="{% static 'Images/arrow copy.png' %}" alt="" srcset="">Terms & Conditions</a></p>
-            </div>
+            <p class="chunk">
+              Chunkeet application we aim at accepting large file and breaking
+              them into bits while maintaining the right format.
+            </p>
+          </div>
+          <div class="socials">
+            <ul>
+              <li><img src=" {% static 'Images/google-icon.png' %} " alt="google icon" /></li>
+              <li>
+                <img
+                  src=" {% static 'Images/facebook-icon.png' %} "
+                  alt="facebook icon"
+                  class="facebook"
+                />
+              </li>
+              <li>
+                <img src=" {% static 'Images/twitter-icon.png' %}" alt="twitter icon" />
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="footerBottom bgSkyblue">
-            <p>&copy; Chunkeet</p>
+        <div class="right">
+          <h3>Useful Links</h3>
+          <ul>
+            <li>
+              <img src=" {% static 'Images/arrow.png' %} " alt="arrow icon" /><a href="{% url 'index' %}"
+                >Home</a
+              >
+            </li>
+            <li>
+              <img src=" {% static 'Images/arrow.png' %}" alt="arrow icon" /><a href="{% url 'aboutUs' %}"
+                >About Us</a
+              >
+            </li>
+            <li>
+              <img src=" {% static 'Images/arrow.png' %}" alt="arrow icon" /><a href="{% url 'contact' %}"
+                >Contact Us</a
+              >
+            </li>
+            <li>
+              <img src=" {% static 'Images/arrow.png' %}" alt="arrow icon" /><a href="#"
+                >Terms and Conditions</a
+              >
+            </li>
+          </ul>
         </div>
-    </footer>
-{% endblock footer %}
-
-
-
- 
+      </div>
+      <div class="copyright">&COPY; Chunkeet</div>
+      {% endblock footer %}
