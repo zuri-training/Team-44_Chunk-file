@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+}
+
+.flex_c {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body {
+  font-family: 'Sora', sans-serif;
+  min-height: 100vh;
+  max-width: 100vw;
+}
+
+.left {
+  padding: 3rem 0 3rem 3rem;
+  flex: 0.2;
+  min-height: 100vh;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column;
+  position: relative;
+}
+
+.left::after {
+  content: '';
+  background-color: #e6e9f0;
+  height: 49.5rem;
+  width: 2px;
+  position: absolute;
+  top: -3rem;
+  left: 18rem;
+}
+
+.logo p {
+  color: #03256c;
+  font-weight: bold;
+  margin-left: 0.5rem;
+}
+
+.active {
+  background-color: #e6e9f0;
+}
+
+.blue {
+  position: relative;
+  bottom: 1.5rem;
+}
+
+.keet {
+  color: #06bee1;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  color: #03256c;
+  margin: 2rem 0;
+  font-weight: bold;
+  padding: 0.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+
+li:hover {
+  background-color: #e6e9f06b;
+  transform: translateX(20px);
+}
+
+li img {
+  margin-right: 0.3rem;
+}
+
+.right {
+  flex: 0.8;
+  min-height: 100vh;
+  padding: 1rem 3rem 0 1rem;
+}
+
+.mini__nav {
+  gap: 1rem;
+  justify-content: flex-end;
+}
+
+.upload,
+small,
+h1 {
+  margin-top: 1.5rem;
+}
+
+h2 {
+  margin-bottom: 1rem;
+}
+
+.drag-area {
+  border: 2px dashed #03256c;
+  height: 22rem;
+  width: 55rem;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.drag {
+  align-items: flex-start;
+}
+
+.drag-area.hover {
+  border: 2px dashed greenyellow;
+}
+
+.drag-area.error {
+  border: 2px dashed orangered;
+}
+
+.drag-area header {
+  font-size: 30px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.drag small {
+  margin-top: 0;
+}
+
+.drag-area button {
+  padding: 0.09rem 1rem 0 0.5rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  border: none;
+  outline: none;
+  background: #fff;
+  color: #03256c;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.img img {
+  margin-bottom: 1rem;
+}
+
+.files {
+  margin-top: 2rem;
+}
