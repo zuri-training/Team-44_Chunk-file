@@ -15,7 +15,7 @@ The projects goal is to build a platform that accepts CSV or JSON large files, a
 # List of Contributions
 1. Participated in User Research specifically in designing the [_Empathy map and User Flow._](https://www.figma.com/file/mURSGFsm0Hx7tTKxTL6Kbw/(control-version)-PROJECT_TEAM_44-CHUNK_FILES-PROJECT-LIBRARY-Team-version?node-id=2477%3A34253)
 
-2.  Assisted in structuring and formatting the research documentation.
+2. Assisted in the structuring and formatting the research documentation.
 
 3. Designed the Mid-fi pages for the following:
    - [Splitting screen.](https://www.figma.com/file/mURSGFsm0Hx7tTKxTL6Kbw/(control-version)-PROJECT_TEAM_44-CHUNK_FILES-PROJECT-LIBRARY-Team-version?node-id=1859%3A6792)
