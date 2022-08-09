@@ -1,5 +1,5 @@
-I carried out research for our research plan and compiled all the research from group members for team approval
-I created the contents and designed the slides for presentation for team approval
+I carried out research for our research plan and compiled all the research from group members 
+I created the contents and designed the slides for presentation
 I presented our team's project
 I designed the Sign Up and Sign In page with a team mate
 I prototyped the Sign Up and Sign In page with a team mate
