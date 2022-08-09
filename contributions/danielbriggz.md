@@ -51,9 +51,9 @@ The projects goal is to build a platform that accepts CSV or JSON large files, a
 
    - [FAQ page](https://www.figma.com/file/mURSGFsm0Hx7tTKxTL6Kbw/(control-version)-PROJECT_TEAM_44-CHUNK_FILES-PROJECT-LIBRARY-Team-version?node-id=2472%3A29311) with its [components.](https://www.figma.com/file/mURSGFsm0Hx7tTKxTL6Kbw/(control-version)-PROJECT_TEAM_44-CHUNK_FILES-PROJECT-LIBRARY-Team-version?node-id=2472%3A29752)
    
-   - Redesigned the [About us page.](https://www.figma.com/file/mURSGFsm0Hx7tTKxTL6Kbw/(control-version)-PROJECT_TEAM_44-CHUNK_FILES-PROJECT-LIBRARY-Team-version?node-id=2472%3A28
+   - Redesigned the [About us page.](https://www.figma.com/file/mURSGFsm0Hx7tTKxTL6Kbw/(control-version)-PROJECT_TEAM_44-CHUNK_FILES-PROJECT-LIBRARY-Team-version?node-id=2472%3A28)
 
-6. Prototyped all pages designed in **_3. and 4._** including others such 
+6. Prototyped all pages designed in **_4. and 5._** including others such 
    - The nav for the dashboard screens (light and dark modes).
    - The carousel on the About us page (light and dark modes).
    - The nav bar (light and dark modes)
