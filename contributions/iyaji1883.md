@@ -13,3 +13,11 @@
 [Rearrange Final Design for Prototyping](https://github.com/zuri-training/Team-44_Chunk-file/commit/9d283239254d1c220436432ed9225d3626ccc424)
 
 [Edit Dashboard for Existing User](https://www.figma.com/file/mURSGFsm0Hx7tTKxTL6Kbw/(control-version)-PROJECT_TEAM_44-CHUNK_FILES-PROJECT-LIBRARY-Team-version?node-id=2472%3A36042)
+
+I carried out interviews on subjects that i screened and contacted after the screener survey.
+
+Gave Feedback on User Research
+
+Assisted Developers in answering Research Questions
+
+Helped the Team maintain Focus by constant reminders and Prioritising of Tasks.
