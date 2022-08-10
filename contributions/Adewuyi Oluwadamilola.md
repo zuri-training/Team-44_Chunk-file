@@ -1,3 +1,4 @@
 - I worked on the Lo-fi and Hi-fi of Forgot password,Create new password,Check Email and Email message Screens.
 - I and some other team members also worked on the Research plan where we did the Empathy Map,Organised Note,idea Prioritization,User Story,User persona and User flow.  
 - [Link to Figma file i worked on](https://www.figma.com/file/mURSGFsm0Hx7tTKxTL6Kbw)
+- https://github.com/zuri-training/Team-44_Chunk-file/blob/main/contributions/Adewuyi%20Oluwadamilola.md
