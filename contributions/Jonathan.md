@@ -1,6 +1,6 @@
 My Name is Adah Jonathan and I am a Product Designer. I am a member of Project Team 44 working on the Chunk_file Project.
 
-The list below are my Contributions to Team 44 Project (Chunking File)
+The list below are my Contributions to Team 44 Project (Chunking File):
 
 I designed the uploading screens of our project (https://www.figma.com/file/hpTCxerYLCRoqq4HBKz2pk/PROJECT_TEAM_44-CHUNK_FILES-PROJECT-LIBRARY?node-id=2509%3A26257)
 
