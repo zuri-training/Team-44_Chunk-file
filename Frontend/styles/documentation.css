@@ -122,10 +122,19 @@ ol li {
   margin-bottom: 1.5rem;
   font-size: 0.8rem;
   padding: 0 1.5rem;
+  display: none;
+  transition: all 0.5s ease-in;
 }
 
 .faq p.on {
   display: block;
+  transition: all 0.5s ease-in;
+  animation: slide-in-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.faq .arrow.rotate {
+  transform: rotate(90deg);
+  transition: all 0.3s ease-in;
 }
 
 .liner {
@@ -144,4 +153,21 @@ ol li {
   height: 1px;
   bottom: -8px;
   opacity: 0.5;
+}
+
+.arrow {
+  transition: all 0.3s ease-in;
+}
+
+@keyframes slide-in-top {
+  0% {
+    -webkit-transform: translateY(-1000px);
+    transform: translateY(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
 }

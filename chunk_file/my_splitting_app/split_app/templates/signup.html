@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static',filename='styles/auth.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static',filename='styles/signUp.css') }}"
+    />
+    <title>Document</title>
+  </head>
+  <body class="flex_c">
+    <main class="container flex_c">
+      <div class="left flex_c">
+        <img
+          src="{{ url_for('static', filename='Images/amico.png') }}"
+          alt="amico"
+        />
+      </div>
+      <div class="right flex_c">
+        {% for message in get_flashed_messages() %}
+        <div class="alert alert-warning">
+          <button type="button" class="close" data-dismiss="alert">x</button>
+          {{ message }}
+        </div>
+        {% endfor %}
+        <form method="POST" action="/signup">
+          {{ form.csrf_token }}
+          <h1>Create Account</h1>
+          <div class="form">
+            {{ form.name(class_="form__input", placeholder=" ") }} {{
+            form.name.label(class_="form__label") }} {% if form.name.errors %}
+            <ul class="errors">
+              {% for error in form.email.errors %}
+              <li>{{ error }}</li>
+              {% endfor %}
+            </ul>
+            {% endif %}
+          </div>
+
+          <div class="form">
+            {{ form.email(class_='form__input', placeholder=" ") }} {{
+            form.email.label(class_="form__label") }} {% if form.email.errors %}
+            <ul class="errors">
+              {% for error in form.email.errors %}
+              <li>{{ error }}</li>
+              {% endfor %}
+            </ul>
+            {% endif %}
+          </div>
+
+          <div class="form">
+            {{ form.password(class_='form__input' , placeholder=" ") }} {{
+            form.password.label(class_="form__label") }} {% if
+            form.password.errors %}
+            <ul class="errors">
+              {% for error in form.password.errors %}
+              <li>{{ error }}</li>
+              {% endfor %}
+            </ul>
+            {% endif %}
+          </div>
+
+          <div class="form">
+            {{ form.confirm(class_='form__input', placeholder=" ") }} {{
+            form.confirm.label(class_="form__label") }} {% if
+            form.confirm.errors %}
+            <ul class="errors">
+              {% for error in form.confirm.errors %}
+              <li>{{ error }}</li>
+              {% endfor %}
+            </ul>
+            {% endif %}
+          </div>
+          <div class="check">
+            <input type="checkbox" name="checkbox" id="check" required />
+            <small
+              >I have read and accepted the
+              <strong>Terms & Conditions</strong> to Chunkeet</small
+            >
+          </div>
+          <div class="sign_btn">
+            {{ form.submit(class_='btn btn-sign') }}
+            <p>
+              Already have an Account?
+              <a href="{{ url_for('auth_bp.login') }}">Sign In</a>
+            </p>
+          </div>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
