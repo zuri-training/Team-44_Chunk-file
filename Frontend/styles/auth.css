@@ -157,3 +157,17 @@ strong {
   color: #03256c;
   font-size: 1rem;
 }
+
+@media screen and (max-width:1180px){
+  .body{
+    width: 100%;
+    height: auto;
+    padding: 70px 0px;
+  }
+}
+@media screen and (max-width:500px){
+  .a{
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+  }
+}

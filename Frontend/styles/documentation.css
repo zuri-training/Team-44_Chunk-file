@@ -145,3 +145,36 @@ ol li {
   bottom: -8px;
   opacity: 0.5;
 }
+<<<<<<< Updated upstream
+=======
+
+.arrow {
+  transition: all 0.3s ease-in;
+}
+
+@keyframes slide-in-top {
+  0% {
+    -webkit-transform: translateY(-1000px);
+    transform: translateY(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width:1180px){
+  .body{
+    width: 100%;
+    height: auto;
+    padding: 70px 0px;
+  }
+}
+@media screen and (max-width:500px) {
+  .container{
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+  }
+}

@@ -140,6 +140,7 @@ h2 {
   margin: 0;
 }
 
+<<<<<<< Updated upstream
 @media (max-width:1151px) {
 .about{
   margin-top: 1rem;
@@ -176,3 +177,18 @@ h2 {
 
 }
 
+=======
+@media screen and (max-width:1180px){
+  .hero{
+    width: 100%;
+    height: auto;
+    padding: 70px 0px;
+  }
+}
+@media screen and (max-width:500px) {
+  .about h1{
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+  }
+}
+>>>>>>> Stashed changes

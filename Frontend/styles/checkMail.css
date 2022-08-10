@@ -34,7 +34,7 @@ body {
   text-align: center;
 }
 
-h1 {
+h1{
   margin: 2rem 0;
   font-size: 2rem;
 }
@@ -70,4 +70,18 @@ p a {
   color: #03256c;
   margin-left: 0.3rem;
   font-size: 0.85rem;
+}
+
+@media screen and (max-width:1180px){
+  .body{
+    width: 100%;
+    height: auto;
+    padding: 70px 0px;
+  }
+}
+@media screen and (max-width:500px){
+  .h1{
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+  }
 }
