@@ -160,3 +160,17 @@ textarea::placeholder {
   text-align: center;
   flex-direction: column;
 }
+
+@media screen and (max-width:1180px){
+  .main{
+    width: 100%;
+    height: auto;
+    padding: 70px 0px;
+  }
+}
+@media screen and (max-width:500px){
+  .contact__content{
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+  }
+}

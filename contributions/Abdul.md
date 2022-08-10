@@ -15,7 +15,7 @@ I'm a Fullstack Web Developer and the Team Lead for the project chunking for tea
 - [Storage Page Markup](https://github.com/zuri-training/Team-44_Chunk-file/blob/main/Frontend/pages/storagePage.html)
 - [Settings Page Markup](https://github.com/zuri-training/Team-44_Chunk-file/blob/main/Frontend/pages/settings.html)
 - [Draft Page Markup](https://github.com/zuri-training/Team-44_Chunk-file/blob/main/Frontend/pages/newUserDraftpage.html)
-- [Dashboard Page Markup](https://github.com/zuri-training/Team-44_Chunk-file/blob/main/Frontend/pages/newUserDashboard.html).
+
 
 ## Implemented HTML Page Styling
 
