@@ -248,3 +248,87 @@ footer .footer__chun {
   background-color: #06bee1;
   padding: 1rem 0;
 }
+
+@media (max-width: 1265px) {
+
+  
+  header{
+    max-width: 90vw;
+  }
+
+  a {
+    font-size: 0.8rem;
+  }
+
+  #fullname {
+    width: 10rem;
+  }
+  
+  #email {
+    width: 30rem;
+  }
+  
+  .sub {
+    width: 10rem;
+    padding: 0.6rem;
+  }
+  
+
+}
+
+@media (max-width: 1151px) {
+  .nav__bar ul {
+    gap: 2.5rem;
+  }
+
+  .desktop__navigations {
+    justify-content: space-around;
+    gap: 5rem;
+  }
+}
+
+@media (max-width: 1151px) {
+
+  header{
+    max-width: 95vw;
+  }
+
+  .nav__bar ul {
+    gap: 1rem;
+  }
+
+  .desktop__navigations {
+    justify-content: space-around;
+    gap: 2rem;
+  }
+
+  
+  a {
+    font-size: 0.6rem;
+  }
+}
+
+@media (max-width: 755px) {
+  
+  #fullname {
+    width: 7.5rem;
+  }
+  
+  #email {
+    width: 20rem;
+  }
+  
+  .sub {
+    width: 7.5rem;
+    padding: 0.6rem;
+  }
+  
+}
+
+@media (max-width: 734px) {
+  .desktop__navigations {
+    justify-content: space-around;
+    gap: 1rem;
+  }
+
+}
