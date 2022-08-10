@@ -65,8 +65,8 @@ form h1 {
   background-color: #f9f9f9;
   padding: 0.5rem;
   border-radius: 0.2rem;
-  border: 1px solid #4d4d4d46;
-  /* border: none; */
+  /* border: 1px solid #4d4d4d46; */
+  border: none;
   position: absolute;
   top: 0;
   left: 0;
@@ -83,8 +83,8 @@ form h1 {
 /* Change border when input focus*/
 
 .form__input:focus {
-  border-color: none;
-  background-color: #fff;
+  border: none;
+  /* background-color: #fff; */
   outline: none;
 }
 
@@ -156,4 +156,18 @@ small {
 strong {
   color: #03256c;
   font-size: 1rem;
+}
+
+@media screen and (max-width:1180px){
+  .body{
+    width: 100%;
+    height: auto;
+    padding: 70px 0px;
+  }
+}
+@media screen and (max-width:500px){
+  .a{
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+  }
 }

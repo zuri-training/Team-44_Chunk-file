@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, 
+    initial-scale=1.0"
+    />
+    <title>Contact Us</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static',filename='styles/general.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static',filename='styles/contactUs.css') }}"
+    />
+  </head>
+  <body>
+    <!--Navbar-->
+    <header>
+      <div class="logo flex_c">
+        <div class="logo__img flex_c">
+          <img
+            src="{{ url_for('static', filename='Images/Ellipse 13.png') }}"
+            class="blue"
+            alt="logo icon"
+          />
+          <img
+            src="{{ url_for('static', filename='Images/Ellipse 14.png') }}"
+            class="light"
+            alt="logo icon"
+          />
+        </div>
+        <p>Chun<span class="keet">keet</span></p>
+      </div>
+      <div class="desktop__navigations flex_c">
+        <nav class="nav__bar">
+          <ul class="flex_c">
+            <li>
+              <a href="{{ url_for('main_bp.index') }}">Home</a>
+            </li>
+            <li>
+              <a href="{{ url_for('main_bp.contactUs') }}" class="active"
+                >Contact Us</a
+              >
+            </li>
+            <li>
+              <a href="{{ url_for('main_bp.aboutUs') }}">About Us</a>
+            </li>
+            <li><a href="{{ url_for('main_bp.faq') }}">FAQ</a></li>
+          </ul>
+        </nav>
+        <div class="buttons flex_c">
+          <a href="{{ url_for('auth_bp.login') }}" class="btn unfilled"
+            >Sign In</a
+          >
+          <a href="{{ url_for('auth_bp.signup') }}" class="btn filled"
+            >Sign Up</a
+          >
+        </div>
+      </div>
+      <!-- <div class="mobile__navigations">
+            <nav class="nav__bar">
+                <ul>
+                    <li>Home</li>
+                    <li>Contact Us</li>
+                    <li>About Us</li>
+                </ul>
+            </nav>
+            <div class="buttons">
+                <a href="#" class="btn unfilled"></a >
+                <a href="#" class="btn filled"></a >
+            </div>
+          </div> -->
+    </header>
+    <!-- Heading and Form -->
+    <main class="container">
+      <section class="main flex_c">
+        <div class="contact__title">
+          <h1>Contact Us</h1>
+          <p>We would love to hear from you.</p>
+        </div>
+        <div class="contact__content flex_c">
+          <div>
+            <img
+              src="{{ url_for('static', filename='Images/amico_contact.png') }}"
+              alt="contact image"
+            />
+          </div>
+          <form class="forms">
+            <div class="form">
+              <input
+                type="text"
+                id="email"
+                class="form__input"
+                autocomplete="off"
+                placeholder=" "
+              />
+              <label for="email" class="form__label">Email Address</label>
+            </div>
+            <div class="form">
+              <input
+                type="text"
+                id="fullname"
+                class="form__input"
+                autocomplete="off"
+                placeholder=" "
+              />
+              <label for="fullname" class="form__label" placeholder=" "
+                >Full Name</label
+              >
+            </div>
+            <div>
+              <textarea
+                rows="5"
+                column="30"
+                placeholder="Enter Message"
+              ></textarea>
+            </div>
+            <div class="formButton send">
+              <button class="btn filled">Send Message</button>
+            </div>
+          </form>
+        </div>
+      </section>
+      <section class="meetUs">
+        <div class="meetContent bgGrey">
+          <div class="meetUsLink">
+            <div class="meetIcon bgWhite">
+              <img
+                src="{{ url_for('static', filename='Images/location_on.png') }}"
+                alt="location icon"
+              />
+            </div>
+            <div>
+              <p>Our Address</p>
+              <p>No 4 johndoe Street</p>
+            </div>
+          </div>
+          <div class="meetUsLink">
+            <div class="meetIcon bgWhite">
+              <img
+                src="{{ url_for('static', filename='Images/email.png') }}"
+                alt="email icon"
+              />
+            </div>
+            <div>
+              <p>Email Address</p>
+              <p>Chunkeet@gmail.com</p>
+            </div>
+          </div>
+          <div class="meetUsLink">
+            <div class="meetIcon">
+              <img
+                src="{{ url_for('static', filename='Images/phone.png') }}"
+                alt="phone icon"
+              />
+            </div>
+            <div>
+              <p>Phone Number</p>
+              <p>+234 222277790</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!--Footer-->
+    <footer>
+      <div class="footer__wrapper">
+        <div class="left">
+          <div class="left__footer">
+            <div class="footer__logo logo flex_c">
+              <div class="logo__img">
+                <img
+                  src="{{ url_for('static', filename='Images/Ellipse 13.png') }}"
+                  class="blue"
+                  alt="logo icon"
+                />
+                <img
+                  src=" {{ url_for('static', filename='Images/Ellipse 14.png') }}"
+                  class="light"
+                  alt="logo icon"
+                />
+              </div>
+              <p class="footer__chun">Chun<span class="keet">keet</span></p>
+            </div>
+            <p class="chunk">
+              Chunkeet application we aim at accepting large file and breaking
+              them into bits while maintaining the right format.
+            </p>
+          </div>
+          <div class="socials">
+            <ul>
+              <li>
+                <img
+                  src="{{ url_for('static', filename='Images/google-icon.png') }}"
+                  alt="google icon"
+                />
+              </li>
+              <li>
+                <img
+                  src="{{ url_for('static', filename='Images/facebook-icon.png') }}"
+                  alt="facebook icon"
+                  class="facebook"
+                />
+              </li>
+              <li>
+                <img
+                  src="{{ url_for('static', filename='Images/twitter-icon.png') }}"
+                  alt="twitter icon"
+                />
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="right">
+          <h3>Useful Links</h3>
+          <ul>
+            <li>
+              <img
+                src="{{ url_for('static', filename='/Images/arrow.png') }}"
+                alt="arrow icon"
+              />
+              <a href="{{ url_for('main_bp.index') }}">Home</a>
+            </li>
+            <li>
+              <img
+                src="{{ url_for('static', filename='/Images/arrow.png') }}"
+                alt="arrow icon"
+              />
+              <a href="{{ url_for('main_bp.aboutUs') }}">About Us</a>
+            </li>
+            <li>
+              <img
+                src="{{ url_for('static', filename='/Images/arrow.png') }}"
+                alt="arrow icon"
+              />
+              <a href="{{ url_for('main_bp.contactUs') }}">Contact Us</a>
+            </li>
+            <li>
+              <img
+                src="{{ url_for('static', filename='Images/arrow.png') }}"
+                alt="arrow icon"
+              />
+              <a href="#">Terms and Conditions</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="copyright">&COPY; Chunkeet</div>
+    </footer>
+  </body>
+</html>

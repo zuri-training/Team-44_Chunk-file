@@ -1,4 +1,4 @@
-My Name is Adah Jonathan and I am a Product Designer. I am a member of Project Team 44 working on the Chunk_file Project.
+My Name is Adah Jonathan and I am a Product Designer. I am the Design Lead of Project Team 44 working on the Chunk_file Project.
 
 The list below are my Contributions to Team 44 Project (Chunking File):
 

@@ -47,25 +47,6 @@ h1 {
   margin: 0 auto;
 }
 
-.faq {
-  margin-bottom: 0.7rem;
-}
-
-.faq h2 {
-  font-size: 1.2rem;
-  font-weight: 500;
-}
-
-.faq p {
-  margin-bottom: 1.5rem;
-  font-size: 0.8rem;
-  padding: 0 1.5rem;
-}
-
-.faq p.on {
-  display: block;
-}
-
 .liner {
   display: flex;
   align-items: center;
@@ -82,6 +63,31 @@ h1 {
   height: 1px;
   bottom: -8px;
   opacity: 0.5;
+}
+
+.faq {
+  margin-bottom: 0.7rem;
+}
+
+.faq h2 {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.faq p {
+  margin-bottom: 1.5rem;
+  font-size: 0.8rem;
+  padding: 0 1.5rem;
+  display: none;
+}
+
+.faq p.on {
+  display: block;
+}
+
+.faq img.rotate {
+  transform: rotate(45deg);
+  transition: all 0.3s ease-in;
 }
 
 .logo p {
