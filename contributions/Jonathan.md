@@ -15,3 +15,4 @@ I did a general correction on the final design (https://www.figma.com/file/mURSG
 I prototyped the uploading screens (https://www.figma.com/proto/mURSGFsm0Hx7tTKxTL6Kbw/(control-version)-PROJECT_TEAM_44-CHUNK_FILES-PROJECT-LIBRARY-Team-version?node-id=2472%3A28278&scaling=scale-down&page-id=887%3A785&starting-point-node-id=2472%3A28278)
 
 I rearranged our final design prototyping (https://github.com/zuri-training/Team-44_Chunk-file/commit/9d283239254d1c220436432ed9225d3626ccc424)
+
