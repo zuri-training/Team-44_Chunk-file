@@ -1,0 +1,8 @@
+.strong {
+  text-align: right;
+}
+
+strong a {
+  text-decoration: none;
+  color: #03256c;
+}

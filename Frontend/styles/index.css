@@ -42,6 +42,7 @@
   gap: 4rem;
 }
 
+
 .what {
   margin-top: 5rem;
   flex-direction: row-reverse;
@@ -222,6 +223,7 @@ a.get-started,
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .testimonial_box {
@@ -349,4 +351,39 @@ footer .footer__chun {
   color: #fcfcfc;
   background-color: #06bee1;
   padding: 1rem 0;
+}
+
+@media (max-width:1151px) {
+  .headings h1 {
+    font-size: 2.2rem;
+  }
+
+  .headings p,
+.what p {
+  margin: 1.5rem 0;
+  font-size: 0.9rem;
+}
+
+.testimonial_boxes {
+  justify-content: space-around;
+}
+
+}
+
+@media (max-width:1040px) {
+  .hero,
+.what {
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.headings,
+.what__headings {
+  text-align: center;
+  width: 70%;
+  margin-top: 4rem;
+}
+
 }
