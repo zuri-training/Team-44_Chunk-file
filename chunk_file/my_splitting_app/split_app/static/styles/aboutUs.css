@@ -1,0 +1,141 @@
+.hero,
+.value-wrapper,
+.subscribe,
+.trusted {
+  max-width: 85vw;
+  margin: 0 auto;
+}
+
+.about,
+.trusted,
+.value,
+.subscribe {
+  margin-top: 7.5rem;
+}
+
+.hero {
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 4rem;
+}
+
+.headings {
+  text-align: left;
+  width: 40%;
+  margin-top: 4rem;
+}
+
+.headings h1 {
+  font-size: 2.7rem;
+  margin: 2rem 0 1.5rem;
+  color: #03256c;
+}
+
+.image {
+  background-position: center;
+  background-size: cover;
+  width: 35.125rem;
+  height: 32rem;
+}
+
+.image {
+  background: url('../Images/cuate.png') no-repeat;
+}
+
+.about h1,
+h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+.value {
+  background-color: #03256c;
+  max-width: 100%;
+  padding: 5rem 3rem;
+}
+
+.value__boxes {
+  margin-top: 4rem;
+  gap: 2rem;
+  justify-content: center;
+  text-align: center;
+}
+
+.value-content {
+  color: #fcfcfc;
+  width: 40vw;
+  margin: 1rem auto 2rem;
+  text-align: center;
+}
+
+.value-boxes {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.value-boxes img {
+  padding: 0.5rem;
+  background-color: #06bee1;
+}
+
+.value__box {
+  text-align: center;
+  background-color: #f4f4f4;
+  color: #000;
+  width: 15rem;
+  height: 15rem;
+  margin-top: 2rem;
+  padding: 2rem 1rem;
+  border-radius: 10px;
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+
+.value__box:hover {
+  transform: translateY(-15px);
+}
+
+.recycle {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+  flex-direction: column-reverse;
+}
+
+.value__boxes div:nth-of-type(odd) p {
+  margin-top: 2rem;
+}
+
+.value__box {
+  flex: 0.3;
+}
+
+.value__box p {
+  line-height: 1.5;
+}
+
+.value__box img {
+  margin-bottom: 2rem;
+  border-radius: 5px;
+}
+
+.recycle img {
+  margin: 0;
+  border-radius: 0;
+}
+
+.trust {
+  justify-content: space-around;
+  padding-top: 1.5rem;
+}
+
+.trusted h2 {
+  margin: 0;
+}
