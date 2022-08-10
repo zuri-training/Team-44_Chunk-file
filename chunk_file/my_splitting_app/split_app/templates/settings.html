@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Settings</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static',filename='styles/settings.css') }}"
+    />
+  </head>
+  <body>
+    <main class="container flex_c">
+      <section class="left flex_c">
+        <nav>
+          <div class="logo flex_c">
+            <div class="logo__img flex_c">
+              <img
+                src="{{ url_for('static', filename='Images/Ellipse 13.png') }}"
+                alt="amico"
+              />
+              <img
+                src="{{ url_for('static', filename='Images/Ellipse 14.png') }}"
+                class="light"
+                alt="logo icon"
+              />
+            </div>
+            <p>Chun<span class="keet">keet</span></p>
+          </div>
+          <ul class="nav__items">
+            <li class="nav__item">
+              <img
+                src="{{ url_for('static', filename='Images/dashboard icon.png') }}"
+                alt="dashboard icon"
+              /><a href="/dashboard">Dashboard</a>
+            </li>
+            <li class="nav__item">
+              <img
+                src="{{ url_for('static', filename='Images/storage icon.png') }}"
+                alt="storage icon"
+              />
+              <a href="/storage/{{current_user.name}}">Storage</a>
+            </li>
+            <li class="nav__item">
+              <img
+                src="{{ url_for('static', filename='Images/draft.png') }}"
+                alt="draft icon"
+              />Draft
+            </li>
+            <li class="nav__item active">
+              <img
+                src="{{ url_for('static', filename='Images/settings.png') }}"
+                alt="settings icon"
+              /><a href="/settings">Settings</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="logout flex_c">
+          <ul>
+            <li class="nav__item">
+              <img
+                src="{{ url_for('static', filename='Images/logout icon.png') }} "
+                alt="logout icon"
+              />
+              <a href="{{ url_for('main_bp.logout') }}"></a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="right">
+        {% with messages = get_flashed_messages() %} {% if messages %}
+        <ul class="flashes">
+          {% for message in messages %}
+          <li>{{ message }}</li>
+          {% endfor %}
+        </ul>
+        {% endif %} {% endwith %} {% block body %}{% endblock %}
+        <h1>Profile Details</h1>
+        <div class="profile">
+          <div class="profile-head flex_c">
+            <img
+              src="data:image/png;base64,{{ current_user.rendered_data }}"
+              class="myimage"
+              alt="user image"
+            />
+
+            <form
+              method="POST"
+              enctype="multipart/form-data"
+              class="upload"
+              action="/upload/picture/{{ current_user.email }}"
+            >
+              <div class="mb-3">
+                <div class="profile__button flex_c">
+                  <button class="btn filled flex_c">
+                    <img
+                      src="{{ url_for('static', filename='Images/change icon.png') }}"
+                      alt="change icon"
+                    />
+                    <input
+                      class="form-control"
+                      type="file"
+                      id="formFile"
+                      name="inputFile"
+                    />
+                  </button>
+                </div>
+              </div>
+              <input type="submit" class="btn btn-outline-info" />
+            </form>
+          </div>
+        </div>
+        <form
+          method="POST"
+          enctype="multipart/form-data"
+          class="upload"
+          action="/updateprofile/{{ current_user.email }}"
+        >
+          <div class="emails">
+            <div class="name">
+              <div class="form">
+                <input
+                  name="name"
+                  type="text"
+                  id="name"
+                  class="form__input"
+                  autocomplete="off"
+                  placeholder=" "
+                  required
+                />
+                <label for="name" class="form__label">Name</label>
+              </div>
+            </div>
+            <div class="email">
+              <div class="form">
+                <input
+                  type="email"
+                  id="email"
+                  class="form__input"
+                  name="email"
+                  autocomplete="off"
+                  placeholder=""
+                  required
+                />
+                <label for="email" class="form__label">Email Address</label>
+              </div>
+            </div>
+          </div>
+          <div class="passwords">
+            <h2>Change password</h2>
+            <div class="old_password">
+              <div class="form">
+                <input
+                  type="password"
+                  id="oldPassword"
+                  class="form__input"
+                  name="oldPassword"
+                  autocomplete="off"
+                  placeholder=""
+                  required
+                />
+                <label for="password" class="form__label">Old Password</label>
+              </div>
+            </div>
+            <div class="set__password">
+              <div class="form">
+                <input
+                  type="password"
+                  id="newPassword"
+                  name="newPassword"
+                  class="form__input"
+                  autocomplete="off"
+                  min="8"
+                  placeholder=" "
+                  required
+                />
+                <label for="password" class="form__label">New password</label>
+              </div>
+              <div class="form">
+                <input
+                  type="password"
+                  id="confirmPassword"
+                  class="form__input"
+                  autocomplete="off"
+                  name="confirmPassword"
+                  min="8"
+                  placeholder=" "
+                  required
+                />
+                <label for="password" class="form__label"
+                  >Confirm Password</label
+                >
+              </div>
+            </div>
+          </div>
+          <div class="notifications">
+            <h2>Notifications</h2>
+            <div class="notification flex_c">
+              <div class="notification__email flex_c">
+                <small>By email</small>
+                <label class="switch">
+                  <input type="checkbox" />
+                  <span class="slider round"></span>
+                </label>
+              </div>
+              <div class="notification__desktop flex_c">
+                <small>On your Desktop</small>
+                <label class="switch">
+                  <input type="checkbox" />
+                  <span class="slider round"></span>
+                </label>
+              </div>
+            </div>
+            <button type="submit" class="btn filled">Update</button>
+          </div>
+          <div class="deleted flex_c">
+            <button class="btn delete">
+              <img
+                src="{{ url_for('static', filename='Images/delete red.png') }}"
+                alt="delete icon"
+              />Delete account
+            </button>
+          </div>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
