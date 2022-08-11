@@ -70,11 +70,11 @@ a {
 
 .desktop__navigations {
   justify-content: space-between;
-  gap: 12rem;
+  gap: 4rem;
 }
 
 .buttons {
-  gap: 2.5rem;
+  gap: 2rem;
 }
 
 .btn {
@@ -107,6 +107,47 @@ a {
   background-color: transparent;
   color: #03256c;
   font-weight: bold;
+}
+
+.toggle {
+  display: flex;
+
+  cursor: pointer;
+}
+
+.light_mode,
+.dark_mode {
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.3rem 0.7rem;
+  border-radius: 5rem;
+}
+
+.light_mode img,
+.dark_mode img {
+  padding: 0.2rem;
+  border-radius: 50%;
+}
+
+.dark_mode {
+  background-color: #8b9bbb;
+  padding: 0.3 0.7rem;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.light_mode {
+  background-color: #03256c;
+  display: none;
+  color: #fff;
+}
+
+.dark_mode img {
+  background-color: #03256c;
+}
+
+.light_mode img {
+  background-color: #fff;
 }
 
 .cta {
@@ -215,6 +256,11 @@ footer .footer__chun {
   color: #d2d2d2;
 }
 
+.right {
+  align-items: flex-start;
+  gap: 10rem;
+}
+
 .right h3 {
   color: #fcfcfc;
   margin-bottom: 2rem;
@@ -250,9 +296,7 @@ footer .footer__chun {
 }
 
 @media (max-width: 1265px) {
-
-  
-  header{
+  header {
     max-width: 90vw;
   }
 
@@ -263,17 +307,15 @@ footer .footer__chun {
   #fullname {
     width: 10rem;
   }
-  
+
   #email {
     width: 30rem;
   }
-  
+
   .sub {
     width: 10rem;
     padding: 0.6rem;
   }
-  
-
 }
 
 @media (max-width: 1151px) {
@@ -288,8 +330,7 @@ footer .footer__chun {
 }
 
 @media (max-width: 1151px) {
-
-  header{
+  header {
     max-width: 95vw;
   }
 
@@ -302,27 +343,24 @@ footer .footer__chun {
     gap: 2rem;
   }
 
-  
   a {
     font-size: 0.6rem;
   }
 }
 
 @media (max-width: 755px) {
-  
   #fullname {
     width: 7.5rem;
   }
-  
+
   #email {
     width: 20rem;
   }
-  
+
   .sub {
     width: 7.5rem;
     padding: 0.6rem;
   }
-  
 }
 
 @media (max-width: 734px) {
@@ -330,5 +368,4 @@ footer .footer__chun {
     justify-content: space-around;
     gap: 1rem;
   }
-
 }
