@@ -4,5 +4,9 @@
 
 strong a {
   text-decoration: none;
-  color: white;
+  color: #03256c;
+}
+
+.sign_btn a {
+  color: #fff;
 }

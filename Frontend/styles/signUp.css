@@ -8,5 +8,9 @@
 }
 
 a {
-  color: white;
+  color: #03256c;
+}
+
+.btn-sign a {
+  color: #fff;
 }

@@ -1,31 +1,3 @@
-.logo p {
-  color: #03256c;
-  font-weight: bold;
-  margin-left: 0.5rem;
-}
-
-.active {
-  background-color: #e6e9f0;
-}
-
-.blue {
-  position: relative;
-  bottom: 1.5rem;
-}
-
-.keet {
-  color: #06bee1;
-}
-
-li {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-  color: #fff;
-}
-
 footer {
   background-color: #02143b;
   padding: 3rem 0 0;
