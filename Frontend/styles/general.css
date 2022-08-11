@@ -24,7 +24,7 @@ body {
   max-width: 100vw;
 }
 
-header {
+.header_wrapper {
   width: 85vw;
   margin: 0 auto;
   padding: 3rem 0;
@@ -79,7 +79,7 @@ a {
 
 .btn {
   background-color: #03256c;
-  color: #fff;
+  color: #fcfcfc;
   font-family: inherit;
   margin: 0.5rem 0;
   padding: 0.5rem 0.7rem;
@@ -293,6 +293,55 @@ footer .footer__chun {
   color: #fcfcfc;
   background-color: #06bee1;
   padding: 1rem 0;
+}
+
+/* Dark Mode */
+
+header.dark {
+  background-color: #0d0d0d;
+}
+
+body.dark {
+  background-color: #263238;
+}
+
+h1.dark,
+h2.dark,
+h3.dark,
+p.dark,
+a.dark,
+.step_list.dark {
+  color: #fcfcfc;
+}
+
+h4.dark {
+  color: #4d4d4d;
+}
+
+small.dark {
+  color: #989898;
+}
+
+.testimonial_box.dark {
+  background-color: #fff;
+}
+
+.test_para.dark {
+  color: #171717;
+}
+
+.service_head.dark,
+.service_para.dark {
+  color: #000;
+}
+
+.btn.dark {
+  background-color: #355189;
+}
+
+.unfilled.dark {
+  background-color: #fff;
+  color: #355189;
 }
 
 @media (max-width: 1265px) {
