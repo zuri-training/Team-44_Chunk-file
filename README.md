@@ -152,3 +152,7 @@ After chunking their files, the platform gives the users an option to “Downloa
 
 We use HTML, CSS, and JavaScript to create our websites. Our client-side code is very modular and can be easily consumed by modern front-end technologies. We also use Django for authentication purposes. Our back-end is built using Python/Django with a PostgreSQL database.
 
+### Code Documentation
+[Code Documentation](https://github.com/zuri-training/Team-44_Chunk-file/blob/main/chunk_file/my_splitting_app/readme.md
+)
+
