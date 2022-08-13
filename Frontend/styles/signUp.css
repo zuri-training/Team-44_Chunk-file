@@ -14,3 +14,7 @@ a {
 .btn-sign a {
   color: #fff;
 }
+
+strong {
+  font-size: 0.8rem;
+}
