@@ -35,7 +35,7 @@ I'm a Fullstack Web Developer and the Team Lead for the project chunking for tea
 ## Implemented HTML Page Logic(JavaScript)
 
 - [Drag and Drop logic](https://github.com/zuri-training/Team-44_Chunk-file/blob/main/Frontend/javascripts/drag.js)
-- [FAQ Dropdown Logic](https://github.com/zuri-training/Team-44_Chunk-file/blob/main/Frontend/javascripts/drag.js)
-- [Light and Dark mode Logic]()
+- [FAQ Dropdown Logic](https://github.com/zuri-training/Team-44_Chunk-file/blob/main/Frontend/javascripts/drop.js)
+- [Light and Dark mode Logic](https://github.com/zuri-training/Team-44_Chunk-file/blob/main/Frontend/javascripts/dark.js)
 - [Meet the Team Carousel]()
 - [Mobile Navigation]()
