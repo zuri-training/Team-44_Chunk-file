@@ -1,6 +1,7 @@
 """Logged-in page routes."""
 from ast import Try
 import base64
+from pathlib import Path
 from tkinter import N
 from unicodedata import name
 from flask import (
@@ -112,7 +113,7 @@ def settings(name):
 @login_required
 def storage(name):
     """Logged-in User Dashboard."""
-    BASE_DIR = "C:/Users/Abdolyom/Desktop/FINAL PROJECT\Team-44_Chunk-file\chunk_file\my_splitting_app/split_app/static/uploads"
+    BASE_DIR = Path.cwd()/"static"/"uploads"
 
     # Joining the base and the requested path
     abs_path = os.path.join(BASE_DIR)
@@ -174,7 +175,7 @@ def upload_image_file(name):
             filename = filename.split(".")
             file.save(
                 os.path.join(
-                    "C:/Users/Abdolyom/Desktop/FINAL PROJECT\Team-44_Chunk-file\chunk_file\my_splitting_app/split_app/static/uploads/pictures",
+                    Path.cwd()/"static"/"uploads"/"pictures",
                     f"{name}.{filename[-1]}",
                 )
             )
@@ -202,7 +203,7 @@ def upload_file(name):
             filename = secure_filename(file.filename)
             file.save(
                 os.path.join(
-                    "C:/Users/Abdolyom/Desktop/FINAL PROJECT\Team-44_Chunk-file\chunk_file\my_splitting_app/split_app/static/uploads",
+                    Path.cwd()/"static"/"uploads",
                     filename,
                 )
             )
@@ -215,12 +216,12 @@ def upload_file(name):
             splitter.split(
                 open(
                     os.path.join(
-                        "C:/Users/Abdolyom/Desktop/FINAL PROJECT\Team-44_Chunk-file\chunk_file\my_splitting_app/split_app/static/uploads",
+                        Path.cwd()/"static"/"uploads",
                         filename,
                     ),
                     "r",
                 ),
-                output_path="C:/Users/Abdolyom/Desktop/FINAL PROJECT\Team-44_Chunk-file\chunk_file\my_splitting_app/split_app/static/uploads",
+                output_path=Path.cwd()/"static"/"uploads",
                 output_name_template=f"{name}_{savename[0]}_",
                 row_limit=limit,
                 filename=filename,
@@ -236,7 +237,7 @@ def upload_file(name):
 @main_bp.route("/uploads/<name>")
 def download_file(name):
     return send_from_directory(
-        "C:/Users/Abdolyom/Desktop/FINAL PROJECT\Team-44_Chunk-file\chunk_file\my_splitting_app/split_app/static/uploads", name
+        Path.cwd()/"static"/"uploads", name
     )
 
 
@@ -295,7 +296,7 @@ def delete_item(filename, name):
     try:
 
         file_path = os.path.join(
-            "C:/Users/Abdolyom/Desktop/FINAL PROJECT\Team-44_Chunk-file\chunk_file\my_splitting_app/split_app/static/uploads",
+            Path.cwd()/"static"/"uploads",
             filename,
         )
         os.remove(file_path)
