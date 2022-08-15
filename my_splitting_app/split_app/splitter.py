@@ -1,4 +1,5 @@
 import os
+from pathlib import Path
 
 
 def split(
@@ -6,7 +7,7 @@ def split(
     delimiter=",",
     row_limit=10000,
     output_name_template="output_%s.csv",
-    output_path="C:/Users/Joshua Chibuzor Orie/Desktop/my_splitting_app/split_app/static/uploads",
+    output_path=Path.cwd()/"static"/"uploads",
     keep_headers=True,
     filename="",
 ):
