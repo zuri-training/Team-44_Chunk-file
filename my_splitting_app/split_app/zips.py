@@ -29,7 +29,7 @@ def zipper(filename, username):
 
     # writing files to a zipfile
     with ZipFile(
-        f"C:/Users/Abdolyom/Desktop/FINAL PROJECT\Team-44_Chunk-file\chunk_file\my_splitting_app/split_app/static/uploads/{username}_{filename}.zip",
+        f"C:/Users/Joshua Chibuzor Orie/Desktop/my_splitting_app/split_app/static/uploads/{username}_{filename}.zip",
         "w",
     ) as zip:
         # writing each file one by one

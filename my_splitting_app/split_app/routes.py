@@ -55,6 +55,39 @@ def contactUs():
     )
 
 
+@main_bp.route("/documentation")
+def documentation():
+    """Logged-in User Dashboard."""
+    return render_template(
+        "documentation.html",
+        title="Contact-Us Page",
+        template="dashboard-template",
+        current_user=current_user,
+    )
+
+
+@main_bp.route("/tools")
+def tools():
+    """Logged-in User Dashboard."""
+    return render_template(
+        "tools.html",
+        title="Contact-Us Page",
+        template="dashboard-template",
+        current_user=current_user,
+    )
+
+
+@main_bp.route("/gettingStarted")
+def gettingStarted():
+    """Logged-in User Dashboard."""
+    return render_template(
+        "gettingStarted.html",
+        title="Contact-Us Page",
+        template="dashboard-template",
+        current_user=current_user,
+    )
+
+
 @main_bp.route("/faq")
 def faq():
     """Logged-in User Dashboard."""
@@ -112,7 +145,7 @@ def settings(name):
 @login_required
 def storage(name):
     """Logged-in User Dashboard."""
-    BASE_DIR = "C:/Users/Abdolyom/Desktop/FINAL PROJECT\Team-44_Chunk-file\chunk_file\my_splitting_app/split_app/static/uploads"
+    BASE_DIR = "C:/Users/Joshua Chibuzor Orie/Desktop/my_splitting_app/split_app/static/uploads"
 
     # Joining the base and the requested path
     abs_path = os.path.join(BASE_DIR)
@@ -174,7 +207,7 @@ def upload_image_file(name):
             filename = filename.split(".")
             file.save(
                 os.path.join(
-                    "C:/Users/Abdolyom/Desktop/FINAL PROJECT\Team-44_Chunk-file\chunk_file\my_splitting_app/split_app/static/uploads/pictures",
+                    "C:/Users/Joshua Chibuzor Orie/Desktop/my_splitting_app/split_app/static/uploads/pictures",
                     f"{name}.{filename[-1]}",
                 )
             )
@@ -202,7 +235,7 @@ def upload_file(name):
             filename = secure_filename(file.filename)
             file.save(
                 os.path.join(
-                    "C:/Users/Abdolyom/Desktop/FINAL PROJECT\Team-44_Chunk-file\chunk_file\my_splitting_app/split_app/static/uploads",
+                    "C:/Users/Joshua Chibuzor Orie/Desktop/my_splitting_app/split_app/static/uploads",
                     filename,
                 )
             )
@@ -215,12 +248,12 @@ def upload_file(name):
             splitter.split(
                 open(
                     os.path.join(
-                        "C:/Users/Abdolyom/Desktop/FINAL PROJECT\Team-44_Chunk-file\chunk_file\my_splitting_app/split_app/static/uploads",
+                        "C:/Users/Joshua Chibuzor Orie/Desktop/my_splitting_app/split_app/static/uploads",
                         filename,
                     ),
                     "r",
                 ),
-                output_path="C:/Users/Abdolyom/Desktop/FINAL PROJECT\Team-44_Chunk-file\chunk_file\my_splitting_app/split_app/static/uploads",
+                output_path="C:/Users/Joshua Chibuzor Orie/Desktop/my_splitting_app/split_app/static/uploads",
                 output_name_template=f"{name}_{savename[0]}_",
                 row_limit=limit,
                 filename=filename,
@@ -236,7 +269,7 @@ def upload_file(name):
 @main_bp.route("/uploads/<name>")
 def download_file(name):
     return send_from_directory(
-        "C:/Users/Abdolyom/Desktop/FINAL PROJECT\Team-44_Chunk-file\chunk_file\my_splitting_app/split_app/static/uploads", name
+        "C:/Users/Joshua Chibuzor Orie/Desktop/my_splitting_app/split_app/static/uploads", name
     )
 
 
@@ -295,7 +328,7 @@ def delete_item(filename, name):
     try:
 
         file_path = os.path.join(
-            "C:/Users/Abdolyom/Desktop/FINAL PROJECT\Team-44_Chunk-file\chunk_file\my_splitting_app/split_app/static/uploads",
+            "C:/Users/Joshua Chibuzor Orie/Desktop/my_splitting_app/split_app/static/uploads",
             filename,
         )
         os.remove(file_path)

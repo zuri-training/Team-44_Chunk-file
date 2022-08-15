@@ -6,7 +6,7 @@ def split(
     delimiter=",",
     row_limit=10000,
     output_name_template="output_%s.csv",
-    output_path="C:/Users/Abdolyom/Desktop/FINAL PROJECT\Team-44_Chunk-file\chunk_file\my_splitting_app/split_app/static/uploads",
+    output_path="C:/Users/Joshua Chibuzor Orie/Desktop/my_splitting_app/split_app/static/uploads",
     keep_headers=True,
     filename="",
 ):

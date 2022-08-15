@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+ <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static',filename='styles/documentation.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static',filename='styles/general.css') }}"
+    />
+    <script src="{{url_for('static', filename='javascripts/drop.js')}}" defer></script>
+
+    <title>Documentation Page</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo flex_c">
+        <div class="logo__img flex_c">
+          <img
+            src="{{ url_for('static', filename='Images/Ellipse 13.png') }}"
+            class="blue"
+            alt="logo icon"
+          />
+          <img
+            src="{{ url_for('static', filename='Images/Ellipse 14.png') }}"
+            class="light"
+            alt="logo icon"
+          />
+        </div>
+        <p>Chun<span class="keet">keet</span></p>
+      </div>
+      <div class="desktop__navigations flex_c">
+        <nav class="nav__bar">
+          <ul class="flex_c">
+              <li>
+              <a href="{{ url_for('main_bp.index') }}">Home</a>
+            </li>
+            <li>
+              <a href="{{ url_for('main_bp.contactUs') }}">Contact Us</a>
+            </li>
+            <li><a href="{{ url_for('main_bp.aboutUs') }}">About Us</a></li>
+            <li>
+              <a href="{{ url_for('main_bp.faq') }}" class="active">Documentation</a>
+            </li>
+            </li>
+          </ul>
+        </nav>
+        <div class="buttons flex_c">
+          <a href="{{ url_for('auth_bp.login') }}" class="btn unfilled"
+            >Sign In</a
+          >
+          <a href="{{ url_for('auth_bp.signup') }}" class="btn filled"
+            >Sign Up</a
+          >
+        </div>
+      </div>
+      <!-- <div class="mobile__navigations">
+            <nav class="nav__bar">
+                <ul>
+                    <li>Home</li>
+                    <li>Contact Us</li>
+                    <li>About Us</li>
+                </ul>
+            </nav>
+            <div class="buttons">
+                <a href="#" class="btn unfilled"></a >
+                <a href="#" class="btn filled"></a >
+            </div>
+          </div> -->
+    </header>
+    <main class="container">
+      <section class="left_side">
+        <nav>
+          <ul class="nav__items">
+            <li class="nav__item">
+              <a href="../documentation/documentation.html">Introduction</a>
+            </li>
+            <li class="nav__item">
+              <a href="../documentation/gettingStarted.html">Getting Started</a>
+            </li>
+            <li class="nav__item active">
+              <a href="../documentation/tools.html">How the tools work</a>
+            </li>
+            <li class="nav__item">
+              <a href="../documentation/faq.html">FAQs</a>
+            </li>
+          </ul>
+        </nav>
+      </section>
+
+      <section class="right_side">
+        <div id="tools__work">
+          <div class="part">
+            <h2>How Our Website Works</h2>
+            <p>
+              This platform can be accessed using any operating system and is
+              available on mobile and Pc. This platform is designed to be
+              intuitive and easy to use across any operating system. We invite
+              you to explore our website, learn about our products and services,
+              and get in touch with us if you have any questions. The platform
+              utilizes a simple setup and requires no installation. It can be
+              accessed through an internet browser or downloaded to any
+              computer.The platform is available to all users in a secure
+              environment with no download required.
+            </p>
+            <p>
+              Users will need to register on our website to be able to view more
+              details on what our website does. When the Users finally register
+              on the website, the users will be provided a dashboard where
+              he/she would be able to carry out the chunking process. The
+              dashboard also provides Users with “Storage”, “Draft”, “Setting”
+              and “LogOut” options on the side navigation menu. The User can
+              upload their Large CSV and JSON files from their local devices or
+              drag the file to the section on their dashboard where the file
+              will be uploaded. After the file has been uploaded, the user will
+              see a “split” action button where users will click to get their
+              files chunked. While splitting the file, the users will get to see
+              a progress bar on the file that is splitting and also get to know
+              how long it is taking for the file to be chunked.
+            </p>
+            <p>
+              After chunking their files, the platform gives the users an option
+              to “Download and save files” and “Download and Don’t save”. The
+              “Download and save files” option makes it possible for users to
+              download the files to local drive and come back to our website to
+              get the saved/stored documents. The other option is the “Download
+              and Don’t save”, this option was provided for those users that are
+              chunking confidential CSV and JSON files on our platform and would
+              not want us to have hold of the files.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+   <footer>
+      <div class="footer__wrapper">
+        <div class="left">
+          <div class="left__footer">
+            <div class="footer__logo logo flex_c">
+              <div class="logo__img">
+                <img
+                  src=" {{ url_for('static', filename='Images/Ellipse 13.png') }} "
+                  class="blue"
+                  alt="logo icon"
+                />
+                <img
+                  src="{{ url_for('static', filename='Images/Ellipse 14.png') }} "
+                  class="light"
+                  alt="logo icon"
+                />
+              </div>
+              <p class="footer__chun">Chun<span class="keet">keet</span></p>
+            </div>
+            <p class="chunk">
+              Chunkeet application we aim at accepting large file and breaking
+              them into bits while maintaining the right format.
+            </p>
+          </div>
+          <div class="socials">
+            <ul>
+              <li>
+                <img
+                  src="{{ url_for('static', filename='Images/google-icon.png') }} "
+                  alt="google icon"
+                />
+              </li>
+              <li>
+                <img
+                  src="{{ url_for('static', filename='Images/facebook-icon.png') }}"
+                  alt="facebook icon"
+                  class="facebook"
+                />
+              </li>
+              <li>
+                <img
+                  src="{{ url_for('static', filename='Images/twitter-icon.png') }}"
+                  alt="twitter icon"
+                />
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="right flex_c">
+          <div class="useful__links">
+            <h3>Useful Links</h3>
+            <ul>
+              <li>
+              <img
+                src="{{ url_for('static', filename='/Images/arrow.png') }}"
+                alt="arrow icon"
+              />
+              <a href="{{ url_for('main_bp.index') }}">Home</a>
+            </li>
+            <li>
+              <img
+                src="{{ url_for('static', filename='/Images/arrow.png') }}"
+                alt="arrow icon"
+              />
+              <a href="{{ url_for('main_bp.aboutUs') }}">About Us</a>
+            </li>
+            <li>
+              <img
+                src="{{ url_for('static', filename='/Images/arrow.png') }}"
+                alt="arrow icon"
+              />
+              <a href="{{ url_for('main_bp.contactUs') }}">Contact Us</a>
+            </li>
+            <li>
+              <img
+                src="{{ url_for('static', filename='Images/arrow.png') }}"
+                alt="arrow icon"
+              />
+              <a href="#">Terms and Conditions</a>
+            </li>
+            </ul>
+          </div>
+          <div class="help">
+            <h3>Help</h3>
+            <ul>
+              <li>
+                <img src="{{ url_for('static', filename='/Images/arrow.png') }}" alt="arrow icon" /><a
+                  href="./documentation.html"
+                  >Documentation</a
+                >
+              </li>
+              <li>
+                <img src="{{ url_for('static', filename='/Images/arrow.png') }}" alt="arrow icon" /><a
+                  href="./faq.html"
+                  >FAQs</a
+                >
+              </li>
+              <li>
+                <img src="{{ url_for('static', filename='/Images/arrow.png') }}" alt="arrow icon" /><a href="#"
+                  >Terms and Conditions</a
+                >
+              </li>
+              <li>
+                <img src="{{ url_for('static', filename='/Images/arrow.png') }}" alt="arrow icon" /><a href="#"
+                  >Privacy Policy</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">&COPY; Chunkeet</div>
+    </footer>
+  </body>
+</html>
