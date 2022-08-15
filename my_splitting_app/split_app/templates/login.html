@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static',filename='styles/auth.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static',filename='styles/login.css') }}"
+    />
+</head>
+<body class="flex_c">
+    <main class="container flex_c">
+        <div class="left flex_c"><img src="{{ url_for('static',filename='Images/pana.png') }}" alt="pana"></div>
+        <div class="right flex_c">
+             {% for message in get_flashed_messages() %}
+      <div class="alert alert-warning strong">
+        <button
+          type="button"
+          class="close"
+          data-dismiss="alert">
+            x
+          </button>
+        {{ message }}
+      </div>
+    {% endfor %}
+            <form method="POST" action="/login">
+              {{ form.csrf_token }}
+                <h1>Sign In</h1>
+        <div class="form">
+        {{ form.email(placeholder=' ',class_='form__input', autocomplete="off") }}
+        {{ form.email.label(class_="form__label") }}
+        {% if form.email.errors %}
+          <ul class="errors">
+            {% for error in form.email.errors %}
+              <li>{{ error }}</li>{% endfor %}
+          </ul>
+        {% endif %}
+      </div>
+
+      <div class="form">
+        {{ form.password(placeholder=' ',class_='form__input', autocomplete="off") }}
+        {{ form.password.label(class_="form__label") }}
+        {% if form.email.errors %}
+          <ul class="errors">
+            {% for error in form.password.errors %}
+              <li>{{ error }}</li>{% endfor %}
+          </ul>
+        {% endif %}
+      </div>
+      <div class="strong">
+          <strong><a href="../pages/forgotPasswordPage.html">Forgot Password?</a> </strong>
+      </div>
+<div class="sign_btn flex_c">
+          {{ form.submit(class_="btn btn-sign") }}
+          <p>Don't have an Account? <a href="{{ url_for('auth_bp.signup') }}">Create Account</a></p>
+          </div>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,8 @@
+.check {
+  display: flex;
+  align-items: center;
+}
+
+.check input {
+  margin-right: 0.25rem;
+}
