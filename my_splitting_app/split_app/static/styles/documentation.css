@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+}
+
+.flex_c {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body {
+  font-family: 'Sora', sans-serif;
+  min-height: 100vh;
+  max-width: 100vw;
+  scroll-behavior: smooth;
+}
+
+.container {
+  display: flex;
+  align-items: flex-start;
+}
+
+.left_side {
+  padding: 0 0 3rem 3rem;
+  flex: 0.2;
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column;
+  position: relative;
+}
+
+.left_side::after {
+  content: '';
+  background-color: #e6e9f0;
+  height: 49.5rem;
+  width: 2px;
+  position: absolute;
+  top: 0;
+  left: 18rem;
+}
+
+.left_side li {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: 2rem 0;
+  font-weight: normal;
+  padding: 0.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+
+.left_side li.active {
+  font-weight: bold;
+  background-color: #e6e9f06b;
+}
+
+.left_side li a {
+  color: #03256c;
+}
+
+.left_side li:hover {
+  background-color: #e6e9f06b;
+  transform: translateX(20px);
+}
+
+.right_side {
+  max-width: 85%;
+  margin: 0 5rem;
+  flex: 0.8;
+  min-height: 100vh;
+  padding: 0 0 1.5rem 4rem;
+}
+
+h1,
+h2 {
+  margin: 1.5rem 0;
+}
+
+.path p {
+  font-size: 0.8rem;
+}
+
+#tools__work p {
+  margin-top: 1.5rem;
+}
+
+ol li {
+  list-style-type: decimal;
+  margin-bottom: 0.5rem;
+  margin-left: 0.5rem;
+}
+
+.faqs {
+  width: 40vw;
+  margin: 0;
+}
+
+.faq {
+  margin-bottom: 0.7rem;
+}
+
+.faq h2 {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.faq p {
+  margin-bottom: 1.5rem;
+  font-size: 0.8rem;
+  padding: 0 1.5rem;
+  display: none;
+  transition: all 0.5s ease-in;
+}
+
+.faq p.on {
+  display: block;
+  transition: all 0.5s ease-in;
+  animation: slide-in-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.faq .arrow.rotate {
+  transform: rotate(90deg);
+  transition: all 0.3s ease-in;
+}
+
+.liner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.liner::after {
+  content: '';
+  background-color: #000;
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: -8px;
+  opacity: 0.5;
+}
+
+.arrow {
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+}
+
+@keyframes slide-in-top {
+  0% {
+    -webkit-transform: translateY(-1000px);
+    transform: translateY(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
