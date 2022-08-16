@@ -12,10 +12,12 @@
       rel="stylesheet"
       href="{{ url_for('static',filename='styles/index.css') }}"
     />
+    <script src="{{ url_for('static', filename='javascripts/dark.js')}}" defer></script>
     <title>Chunkeet || A Website to split and convert CSV and JSON files</title>
   </head>
   <body>
     <header>
+      <div class="header_wrapper">
       <div class="logo flex_c">
         <div class="logo__img flex_c">
           <img
@@ -37,9 +39,19 @@
             </li>
             <li><a href="{{ url_for('main_bp.contactUs') }}">Contact Us</a></li>
             <li><a href="{{ url_for('main_bp.aboutUs') }}">About Us</a></li>
-            <li><a href="{{ url_for('main_bp.faq') }}">FAQ</a></li>
+            <li><a href="{{ url_for('main_bp.faq') }}">Documentation</a></li>
           </ul>
         </nav>
+        <div class="toggle">
+          <div class="dark_mode">
+            <small>Dark</small>
+            <img src="{{url_for('static', filename='Images/dark-icon.png')}}" alt="dark icon" />
+          </div>
+          <div class="light_mode">
+            <small>Light</small>
+            <img src=" {{url_for('static', filename='Images/light-Icon.png')}} " alt="light icon" />
+          </div>
+        </div>
         <div class="buttons flex_c">
           <a href="{{ url_for('auth_bp.login') }}" class="btn unfilled"
             >Sign In</a
@@ -49,6 +61,7 @@
           >
         </div>
       </div>
+    </div>  
       <!-- <div class="mobile__navigations">
             <nav class="nav__bar">
                 <ul>
@@ -107,8 +120,8 @@
                 alt="dash icon"
               />
               <div class="box__content">
-                <h3>Your Own Dashboard</h3>
-                <p>
+                <h3 class="service_head">Your Own Dashboard</h3>
+                <p class="service_para">
                   You get your very own aesthetically pleasing dashboard which
                   is user friendly and has everything you’ll need
                 </p>
@@ -120,8 +133,8 @@
                 alt="lock icon"
               />
               <div class="box__content">
-                <h3>Save for Later</h3>
-                <p>
+                <h3 class="service_head">Save for Later</h3>
+                <p class="service_para">
                   When you’re done chunking you can always come back to your
                   files in future provided you have a chunkeet account.
                 </p>
@@ -133,8 +146,8 @@
                 alt="no ads icon"
               />
               <div class="box__content">
-                <h3>No Ads</h3>
-                <p>
+                <h3 class="service_head">No Ads</h3>
+                <p class="service_para">
                   Tired of Ads? Well, Chunkeet is completely free and devoid of
                   Ads. Our platform provides a clean experience
                 </p>
@@ -150,21 +163,21 @@
           <button class="btn grey">Convert CSV to JSON</button>
         </div>
         <div class="step">
-          <ol class="step__list">
-            <li>
+          <ol>
+            <li class="step_list">
               Tap on the “Register” button to get started on your account or Log
               in to continue.
             </li>
-            <li>
+            <li class="step_list">
               Select your files and upload it or drag and drop into the “Upload
               file box” on your dashboard.
             </li>
-            <li>
+            <li class="step_list">
               Choose the number of header lines you want your file to be
               splitted.
             </li>
-            <li>Click on the “Split File” button.</li>
-            <li>
+            <li class="step_list">Click on the “Split File” button.</li>
+            <li class="step_list">
               Once your file has been splitted, you can
               <span> “Download and Delete”</span> or
               <span>“Save for later”</span>.
@@ -232,7 +245,7 @@
               src="{{ url_for('static', filename='Images/quote.png') }}"
               alt="quote icon"
             />
-            <p>
+            <p class="test_para">
               Splitting my large files just became easier with chunkeet. I have
               been able to split my files into smaller usable chunks and i can
               download and access it, at a later time.
@@ -253,7 +266,7 @@
               src="{{ url_for('static', filename='Images/quote.png') }}"
               alt="quote icon"
             />
-            <p>
+            <p class="test_para">
               Your file privacy is guaranteed on chunkeet. Your can download
               your splitted file and erase it from the platform and not be
               bothered about who has accessed or not.
@@ -274,7 +287,7 @@
               src="{{ url_for('static', filename='Images/quote.png') }}"
               alt="quote icon"
             />
-            <p>
+            <p class="test_para">
               With chunkeet i’m in control. I can choose the number of rows i
               want per file, i can check for my files on the dashboard and i can
               delete my files anytime.
