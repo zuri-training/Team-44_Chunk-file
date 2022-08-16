@@ -4,65 +4,57 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="{{ url_for('static',filename='styles/general.css') }}"
-    />
-    <link
-      rel="stylesheet"
-      href="{{ url_for('static',filename='styles/index.css') }}"
-    />
-    <script src="{{ url_for('static', filename='javascripts/dark.js')}}" defer></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'styles/general.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'styles/index.css') }}" />
+    <script src="{{ url_for('static', filename = 'javascripts/dark.js') }}" defer></script>
     <title>Chunkeet || A Website to split and convert CSV and JSON files</title>
   </head>
   <body>
     <header>
       <div class="header_wrapper">
-      <div class="logo flex_c">
-        <div class="logo__img flex_c">
-          <img
-            src="{{ url_for('static', filename='Images/Ellipse 13.png') }}"
-            alt="logo icon"
-          />
-          <img
-            src="{{ url_for('static', filename='Images/Ellipse 14.png') }}"
-            alt="logo icon"
-          />
-        </div>
-        <p>Chun<span class="keet">keet</span></p>
-      </div>
-      <div class="desktop__navigations flex_c">
-        <nav class="nav__bar">
-          <ul class="flex_c">
-            <li>
-              <a href="{{ url_for('main_bp.index') }}l" class="active">Home</a>
-            </li>
-            <li><a href="{{ url_for('main_bp.contactUs') }}">Contact Us</a></li>
-            <li><a href="{{ url_for('main_bp.aboutUs') }}">About Us</a></li>
-            <li><a href="{{ url_for('main_bp.faq') }}">Documentation</a></li>
-          </ul>
-        </nav>
-        <div class="toggle">
-          <div class="dark_mode">
-            <small>Dark</small>
-            <img src="{{url_for('static', filename='Images/dark-icon.png')}}" alt="dark icon" />
+        <div class="logo flex_c">
+          <div class="logo__img flex_c">
+            <img src="{{ url_for('static', filename = 'Images/Ellipse 13.png') }}" alt="logo icon" />
+            <img src="{{ url_for('static', filename = 'Images/Ellipse 14.png') }}" alt="logo icon" />
           </div>
-          <div class="light_mode">
-            <small>Light</small>
-            <img src=" {{url_for('static', filename='Images/light-Icon.png')}} " alt="light icon" />
+          <p>
+            Chun<span class="keet">keet</span>
+          </p>
+        </div>
+        <div class="desktop__navigations flex_c">
+          <nav class="nav__bar">
+            <ul class="flex_c">
+              <li>
+                <a href="{{ url_for('main_bp.index') }}" class="active">Home</a>
+              </li>
+              <li>
+                <a href="{{ url_for('main_bp.contactUs') }}">Contact Us</a>
+              </li>
+              <li>
+                <a href="{{ url_for('main_bp.aboutUs') }}">About Us</a>
+              </li>
+              <li>
+                <a href="{{ url_for('main_bp.faq') }}">Documentation</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="toggle">
+            <div class="dark_mode">
+              <small>Dark</small>
+              <img src="{{ url_for('static', filename = 'Images/dark-icon.png') }}" alt="dark icon" />
+            </div>
+            <div class="light_mode">
+              <small>Light</small>
+              <img src=" {{ url_for('static', filename = 'Images/light-Icon.png') }} " alt="light icon" />
+            </div>
+          </div>
+          <div class="buttons flex_c">
+            <a href="{{ url_for('auth_bp.login') }}" class="btn unfilled">Sign In</a>
+            <a href="{{ url_for('auth_bp.signup') }}" class="btn filled">Sign Up</a>
           </div>
         </div>
-        <div class="buttons flex_c">
-          <a href="{{ url_for('auth_bp.login') }}" class="btn unfilled"
-            >Sign In</a
-          >
-          <a href="{{ url_for('auth_bp.signup') }}" class="btn filled"
-            >Sign Up</a
-          >
-        </div>
       </div>
-    </div>  
-      <!-- <div class="mobile__navigations">
+      <!--  <div class="mobile__navigations">
             <nav class="nav__bar">
                 <ul>
                     <li>Home</li>
@@ -74,7 +66,7 @@
                 <a href="#" class="btn unfilled"></a >
                 <a href="#" class="btn filled"></a >
             </div>
-          </div> -->
+          </div>  -->
     </header>
     <main class="container">
       <section class="hero flex_c">
@@ -82,7 +74,7 @@
           <h1>The Easiest and Most Secure Tool for Splitting Your Files</h1>
           <p>Maximize your productivity with unlimited access to our tool</p>
           <div class="get_started">
-            <a href="{{ url_for('auth_bp.signup') }}" class="btn filled get-started"> Get Started</a>
+            <a href="{{ url_for('auth_bp.signup') }}" class="btn filled get-started">Get Started</a>
           </div>
         </div>
         <div class="image"></div>
@@ -90,16 +82,9 @@
       <section class="what flex_c">
         <div class="what__headings">
           <h2>What is Chunkeet</h2>
-          <p>
-            Chunkeet is a platform that accepts large CSV and JSON files and
-            breaks them into smaller bits while maintaining the right format.
-            The platform allows authenticated users, to upload their large
-            files, chunk it into bits and download to their local device.
-          </p>
+          <p>Chunkeet is a platform that accepts large CSV and JSON files and breaks them into smaller bits while maintaining the right format. The platform allows authenticated users, to upload their large files, chunk it into bits and download to their local device.</p>
           <div class="what__learn-more">
-            <a href="{{ url_for('main_bp.faq') }}" class="btn filled learn_more"
-              >Learn More</a
-            >
+            <a href="{{ url_for('main_bp.faq') }}" class="btn filled learn_more">Learn More</a>
           </div>
         </div>
         <div class="what__image"></div>
@@ -108,49 +93,28 @@
         <div class="choose__us-wrapper">
           <div class="choose__us-content">
             <h2>Why you should choose chunkeet</h2>
-            <p>
-              See all the special features Chunkeet brings to you, what makes us
-              stand out from your regular Chunking website
-            </p>
+            <p>See all the special features Chunkeet brings to you, what makes us stand out from your regular Chunking website</p>
           </div>
           <div class="choose__us-boxes">
             <div class="box">
-              <img
-                src="{{ url_for('static', filename='Images/owndashboard.png') }}"
-                alt="dash icon"
-              />
+              <img src="{{ url_for('static', filename = 'Images/owndashboard.png') }}" alt="dash icon" />
               <div class="box__content">
                 <h3 class="service_head">Your Own Dashboard</h3>
-                <p class="service_para">
-                  You get your very own aesthetically pleasing dashboard which
-                  is user friendly and has everything you’ll need
-                </p>
+                <p class="service_para">You get your very own aesthetically pleasing dashboard which is user friendly and has everything you’ll need</p>
               </div>
             </div>
             <div class="box">
-              <img
-                src="{{ url_for('static', filename='Images/enhanced_encryption.png') }}"
-                alt="lock icon"
-              />
+              <img src="{{ url_for('static', filename = 'Images/enhanced_encryption.png') }}" alt="lock icon" />
               <div class="box__content">
                 <h3 class="service_head">Save for Later</h3>
-                <p class="service_para">
-                  When you’re done chunking you can always come back to your
-                  files in future provided you have a chunkeet account.
-                </p>
+                <p class="service_para">When you’re done chunking you can always come back to your files in future provided you have a chunkeet account.</p>
               </div>
             </div>
             <div class="box">
-              <img
-                src="{{ url_for('static', filename='Images/not_interested.png') }}"
-                alt="no ads icon"
-              />
+              <img src="{{ url_for('static', filename = 'Images/not_interested.png') }}" alt="no ads icon" />
               <div class="box__content">
                 <h3 class="service_head">No Ads</h3>
-                <p class="service_para">
-                  Tired of Ads? Well, Chunkeet is completely free and devoid of
-                  Ads. Our platform provides a clean experience
-                </p>
+                <p class="service_para">Tired of Ads? Well, Chunkeet is completely free and devoid of Ads. Our platform provides a clean experience</p>
               </div>
             </div>
           </div>
@@ -164,22 +128,13 @@
         </div>
         <div class="step">
           <ol>
-            <li class="step_list">
-              Tap on the “Register” button to get started on your account or Log
-              in to continue.
-            </li>
-            <li class="step_list">
-              Select your files and upload it or drag and drop into the “Upload
-              file box” on your dashboard.
-            </li>
-            <li class="step_list">
-              Choose the number of header lines you want your file to be
-              splitted.
-            </li>
+            <li class="step_list">Tap on the “Register” button to get started on your account or Log in to continue.</li>
+            <li class="step_list">Select your files and upload it or drag and drop into the “Upload file box” on your dashboard.</li>
+            <li class="step_list">Choose the number of header lines you want your file to be splitted.</li>
             <li class="step_list">Click on the “Split File” button.</li>
             <li class="step_list">
               Once your file has been splitted, you can
-              <span> “Download and Delete”</span> or
+              <span>“Download and Delete”</span> or
               <span>“Save for later”</span>.
             </li>
           </ol>
@@ -189,47 +144,23 @@
         <div class="services__wrapper">
           <div class="services__content">
             <h2>Our Services</h2>
-            <p>
-              Chunkeet offers the following services for free, all these and
-              more
-            </p>
+            <p>Chunkeet offers the following services for free, all these and more</p>
           </div>
           <div class="service__boxes">
             <div class="services_box">
-              <img
-                src="{{ url_for('static', filename='Images/horizontal_split.png') }}"
-                alt="split icon"
-                class="horin"
-              />
+              <img src="{{ url_for('static', filename = 'Images/horizontal_split.png') }}" alt="split icon" class="horin" />
               <h3>We Split</h3>
-              <p>
-                Splitting your CSV and JSON files has never been easier,
-                everything is done straight from your dashboard
-              </p>
+              <p>Splitting your CSV and JSON files has never been easier, everything is done straight from your dashboard</p>
             </div>
             <div class="services_box">
-              <img
-                src="{{ url_for('static', filename='Images/lock_open.png') }}"
-                alt="lock icon"
-                class="lock_open"
-              />
+              <img src="{{ url_for('static', filename = 'Images/lock_open.png') }}" alt="lock icon" class="lock_open" />
               <h3>Easy Access</h3>
-              <p>
-                Access to a log of your split and converted files. Easily
-                accessiable and user friendly navigations
-              </p>
+              <p>Access to a log of your split and converted files. Easily accessiable and user friendly navigations</p>
             </div>
             <div class="services_box">
-              <img
-                src="{{ url_for('static', filename='Images/privacy_tip.png') }}"
-                alt="shield icon"
-                class="shield"
-              />
+              <img src="{{ url_for('static', filename = 'Images/privacy_tip.png') }}" alt="shield icon" class="shield" />
               <h3>Privacy guaranteed</h3>
-              <p>
-                Your data is collected and processed directly in your browser
-                ensuring privacy, security, and file integrity.
-              </p>
+              <p>Your data is collected and processed directly in your browser ensuring privacy, security, and file integrity.</p>
             </div>
           </div>
         </div>
@@ -241,20 +172,10 @@
         </div>
         <div class="testimonial_boxes">
           <div class="testimonial_box">
-            <img
-              src="{{ url_for('static', filename='Images/quote.png') }}"
-              alt="quote icon"
-            />
-            <p class="test_para">
-              Splitting my large files just became easier with chunkeet. I have
-              been able to split my files into smaller usable chunks and i can
-              download and access it, at a later time.
-            </p>
+            <img src="{{ url_for('static', filename = 'Images/quote.png') }}" alt="quote icon" />
+            <p class="test_para">Splitting my large files just became easier with chunkeet. I have been able to split my files into smaller usable chunks and i can download and access it, at a later time.</p>
             <div class="testimonial_profile">
-              <img
-                src="{{ url_for('static', filename='Images/Adah.png') }}"
-                alt="adah"
-              />
+              <img src="{{ url_for('static', filename = 'Images/Adah.png') }}" alt="adah" />
               <div class="content_test">
                 <h4>Adah Jonathan</h4>
                 <small>Data Analyst</small>
@@ -262,20 +183,10 @@
             </div>
           </div>
           <div class="testimonial_box">
-            <img
-              src="{{ url_for('static', filename='Images/quote.png') }}"
-              alt="quote icon"
-            />
-            <p class="test_para">
-              Your file privacy is guaranteed on chunkeet. Your can download
-              your splitted file and erase it from the platform and not be
-              bothered about who has accessed or not.
-            </p>
+            <img src="{{ url_for('static', filename = 'Images/quote.png') }}" alt="quote icon" />
+            <p class="test_para">Your file privacy is guaranteed on chunkeet. Your can download your splitted file and erase it from the platform and not be bothered about who has accessed or not.</p>
             <div class="testimonial_profile">
-              <img
-                src="{{ url_for('static', filename='Images/Ayo.png') }}"
-                alt="Ayo icon"
-              />
+              <img src="{{ url_for('static', filename = 'Images/Ayo.png') }}" alt="Ayo icon" />
               <div class="content_test">
                 <h4>Ayo Olowoshile</h4>
                 <small>Software Engineer</small>
@@ -283,20 +194,10 @@
             </div>
           </div>
           <div class="testimonial_box">
-            <img
-              src="{{ url_for('static', filename='Images/quote.png') }}"
-              alt="quote icon"
-            />
-            <p class="test_para">
-              With chunkeet i’m in control. I can choose the number of rows i
-              want per file, i can check for my files on the dashboard and i can
-              delete my files anytime.
-            </p>
+            <img src="{{ url_for('static', filename = 'Images/quote.png') }}" alt="quote icon" />
+            <p class="test_para">With chunkeet i’m in control. I can choose the number of rows i want per file, i can check for my files on the dashboard and i can delete my files anytime.</p>
             <div class="testimonial_profile">
-              <img
-                src="{{ url_for('static', filename='Images/Tobi.png') }}"
-                alt="tobi icon"
-              />
+              <img src="{{ url_for('static', filename = 'Images/Tobi.png') }}" alt="tobi icon" />
               <div class="content_test">
                 <h4>Tobi Micheal</h4>
                 <small>Programmer</small>
@@ -308,42 +209,22 @@
       <section class="file">
         <div class="file__wrapper">
           <h2>File Splitting Made Easier With Chunkeet</h2>
-          <p>
-            Split your large CSV/JSON file using just five easy steps. Split
-            your large file now by just clicking the sign up button.
-          </p>
+          <p>Split your large CSV/JSON file using just five easy steps. Split your large file now by just clicking the sign up button.</p>
           <div class="get_started neon">
-            <a href="#" class="btn filled get-started"> Get Started</a>
+            <a href="#" class="btn filled get-started">Get Started</a>
           </div>
         </div>
       </section>
       <section class="cta">
         <h2>Join Our Newsletter</h2>
-        <p>
-          Subscribe to our newsletter to get up to date notifcations about
-          software, updates and lots more
-        </p>
+        <p>Subscribe to our newsletter to get up to date notifcations about software, updates and lots more</p>
         <form class="subscribe flex_c">
           <div class="form fullname">
-            <input
-              type="text"
-              id="fullname"
-              class="form__input"
-              autocomplete="off"
-              placeholder=" Your Full Name"
-              required
-            />
+            <input type="text" id="fullname" class="form__input" autocomplete="off" placeholder=" Your Full Name" required />
             <label for="fullname" class="form__label"></label>
           </div>
           <div class="form email">
-            <input
-              type="email"
-              id="email"
-              class="form__input"
-              autocomplete="off"
-              placeholder=" Enter your Email Address"
-              required
-            />
+            <input type="email" id="email" class="form__input" autocomplete="off" placeholder=" Enter your Email Address" required />
             <label for="email" class="form__label"></label>
           </div>
           <button type="submit" class="btn filled sub">Subscribe</button>
@@ -356,44 +237,25 @@
           <div class="left__footer">
             <div class="footer__logo logo flex_c">
               <div class="logo__img">
-                <img
-                  src="{{ url_for('static', filename='Images/Ellipse 13.png') }}"
-                  class="blue"
-                  alt="logo icon"
-                />
-                <img
-                  src="{{ url_for('static', filename='Images/Ellipse 14.png') }}"
-                  class="light"
-                  alt="logo icon"
-                />
+                <img src="{{ url_for('static', filename = 'Images/Ellipse 13.png') }}" class="blue" alt="logo icon" />
+                <img src="{{ url_for('static', filename = 'Images/Ellipse 14.png') }}" class="light" alt="logo icon" />
               </div>
-              <p class="footer__chun">Chun<span class="keet">keet</span></p>
+              <p class="footer__chun">
+                Chun<span class="keet">keet</span>
+              </p>
             </div>
-            <p class="chunk">
-              Chunkeet application we aim at accepting large file and breaking
-              them into bits while maintaining the right format.
-            </p>
+            <p class="chunk">Chunkeet application we aim at accepting large file and breaking them into bits while maintaining the right format.</p>
           </div>
           <div class="socials">
             <ul>
               <li>
-                <img
-                  src="{{ url_for('static', filename='Images/google-icon.png') }}"
-                  alt="google icon"
-                />
+                <img src="{{ url_for('static', filename = 'Images/google-icon.png') }}" alt="google icon" />
               </li>
               <li>
-                <img
-                  src="{{ url_for('static', filename='Images/facebook-icon.png') }}"
-                  alt="facebook icon"
-                  class="facebook"
-                />
+                <img src="{{ url_for('static', filename = 'Images/facebook-icon.png') }}" alt="facebook icon" class="facebook" />
               </li>
               <li>
-                <img
-                  src="{{ url_for('static', filename='Images/twitter-icon.png') }}"
-                  alt="twitter icon"
-                />
+                <img src="{{ url_for('static', filename = 'Images/twitter-icon.png') }}" alt="twitter icon" />
               </li>
             </ul>
           </div>
@@ -402,31 +264,19 @@
           <h3>Useful Links</h3>
           <ul>
             <li>
-              <img
-                src="{{ url_for('static', filename='/Images/arrow.png') }}"
-                alt="arrow icon"
-              />
+              <img src="{{ url_for('static', filename = '/Images/arrow.png') }}" alt="arrow icon" />
               <a href="{{ url_for('main_bp.index') }}">Home</a>
             </li>
             <li>
-              <img
-                src="{{ url_for('static', filename='/Images/arrow.png') }}"
-                alt="arrow icon"
-              />
+              <img src="{{ url_for('static', filename = '/Images/arrow.png') }}" alt="arrow icon" />
               <a href="{{ url_for('main_bp.aboutUs') }}">About Us</a>
             </li>
             <li>
-              <img
-                src="{{ url_for('static', filename='/Images/arrow.png') }}"
-                alt="arrow icon"
-              />
+              <img src="{{ url_for('static', filename = '/Images/arrow.png') }}" alt="arrow icon" />
               <a href="{{ url_for('main_bp.contactUs') }}">Contact Us</a>
             </li>
             <li>
-              <img
-                src="{{ url_for('static', filename='Images/arrow.png') }}"
-                alt="arrow icon"
-              />
+              <img src="{{ url_for('static', filename = 'Images/arrow.png') }}" alt="arrow icon" />
               <a href="#">Terms and Conditions</a>
             </li>
           </ul>
