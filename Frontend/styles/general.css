@@ -73,6 +73,14 @@ a {
   gap: 4rem;
 }
 
+.mobile__navigations {
+  display: none;
+}
+
+.close__open {
+  display: none;
+}
+
 .buttons {
   gap: 2rem;
 }
@@ -350,7 +358,7 @@ small.dark {
     max-width: 90vw;
   }
 
-  a {
+  header a {
     font-size: 0.8rem;
   }
 
@@ -393,7 +401,7 @@ small.dark {
     gap: 2rem;
   }
 
-  a {
+  header a {
     font-size: 0.6rem;
   }
 }
@@ -417,5 +425,122 @@ small.dark {
   .desktop__navigations {
     justify-content: space-around;
     gap: 1rem;
+  }
+
+  .footer__wrapper {
+    justify-content: center;
+    flex-direction: column;
+    max-width: 95vw;
+  }
+
+  .left {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .right {
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 0;
+    flex-direction: column;
+  }
+
+  .socials ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 2rem 2rem;
+  }
+}
+
+@media (max-width: 550px) {
+  header {
+    position: relative;
+  }
+
+  .desktop__navigations {
+    display: none;
+  }
+
+  .close__open {
+    display: flex;
+    position: relative;
+    opacity: 0.8;
+    cursor: pointer;
+    transition: all 0.4s ease;
+  }
+
+  .close {
+    display: none;
+    height: 2rem;
+  }
+
+  .open {
+    display: flex;
+    height: 2rem;
+  }
+
+  .mobile__navigations {
+    position: absolute;
+    background-color: #03256c;
+    width: 100vw;
+    height: 100vh;
+    top: 7.5rem;
+    left: 0;
+    display: block;
+  }
+
+  .mobile__navigations ul {
+    margin-top: 10rem;
+  }
+
+  .mobile__navigations ul li {
+    text-align: center;
+    margin-top: 2.5rem;
+    letter-spacing: 2px;
+    transition: all 0.4s ease;
+  }
+
+  .mobile__navigations ul li a {
+    color: #fefefe;
+    font-size: 1rem;
+    text-transform: uppercase;
+  }
+
+  .mobile__navigations .buttons {
+    margin-top: 4rem;
+    flex-direction: column;
+  }
+
+  .mobile__navigations .buttons a {
+    margin: 1rem 0;
+    font-size: 1.2rem;
+  }
+
+  .subscribe {
+    margin-top: 2rem;
+    justify-content: center;
+    flex-direction: column;
+    width: 95vw;
+    margin: 0 auto;
+  }
+
+  #fullname {
+    width: 75vw;
+    margin: 1rem 2rem 1rem 0;
+  }
+
+  #email {
+    width: 75vw;
+    margin: 0 2rem 0 0;
+  }
+
+  .sub {
+    width: 60%;
+    margin: 1rem 2rem 0 0;
   }
 }

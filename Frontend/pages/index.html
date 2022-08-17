@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../styles/general.css" />
     <link rel="stylesheet" href="../styles/index.css" />
     <script src="../javascripts/dark.js" defer></script>
+    <script src="../javascripts/mobileNav.js" defer></script>
     <title>Chunkeet || A Website to split and convert CSV and JSON files</title>
   </head>
   <body>
@@ -45,20 +46,31 @@
             <a href="./signup.html" class="btn filled">Sign Up</a>
           </div>
         </div>
+        <div class="close__open">
+          <img
+            class="open"
+            src="../Images/icon-hamburger.svg"
+            alt="hamburger"
+          />
+          <img class="close" src="../Images/close (1).svg" alt="close" />
+        </div>
+        <div class="mobile__navigations">
+          <nav class="nav__bar">
+            <ul>
+              <li><a href="./index.html" class="active">Home</a></li>
+              <li><a href="./contactUs.html">Contact Us</a></li>
+              <li><a href="./aboutUs.html">About Us</a></li>
+              <li>
+                <a href="./documentation/documentation.html">Documentation</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="buttons flex_c">
+            <a href="./login.html" class="btn unfilled">Sign In</a>
+            <a href="./signup.html" class="btn filled">Sign Up</a>
+          </div>
+        </div>
       </div>
-      <!-- <div class="mobile__navigations">
-            <nav class="nav__bar">
-                <ul>
-                    <li>Home</li>
-                    <li>Contact Us</li>
-                    <li>About Us</li>
-                </ul>
-            </nav>
-            <div class="buttons">
-                <a href="#" class="btn unfilled"></a >
-                <a href="#" class="btn filled"></a >
-            </div>
-          </div> -->
     </header>
     <main class="container">
       <section class="hero flex_c">

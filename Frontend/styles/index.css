@@ -168,6 +168,7 @@ a.get-started,
 .service__boxes {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   gap: 2rem;
 }
 
@@ -267,91 +268,6 @@ a.get-started,
   background-color: #06bee1;
 }
 
-footer {
-  background-color: #03256c;
-  padding: 3rem 0 0;
-}
-
-.footer__wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  max-width: 85vw;
-  margin: 1.5rem auto;
-}
-
-.left {
-  display: flex;
-  align-items: flex-start;
-  gap: 4rem;
-  flex-direction: column;
-  width: 30%;
-}
-
-.chunk {
-  color: #fcfcfc;
-  margin-top: 0.7rem;
-}
-
-.socials ul {
-  display: flex;
-}
-
-.socials ul li {
-  display: flex;
-  align-items: center;
-  background-color: #fff;
-  margin-right: 2rem;
-  padding: 0.7rem;
-  border-radius: 50%;
-}
-
-.socials ul li img.facebook {
-  padding: 0 0.3rem;
-}
-
-footer .logo {
-  justify-content: flex-start;
-}
-
-footer .footer__chun {
-  color: #d2d2d2;
-}
-
-.right h3 {
-  color: #fcfcfc;
-  margin-bottom: 2rem;
-}
-
-.right ul li {
-  margin-bottom: 1.7em;
-  transition: all 0.4s ease-in-out;
-}
-
-.right ul li:hover {
-  transform: translateX(20px);
-}
-
-.right ul li a {
-  color: #fcfcfc;
-}
-
-.right ul li img {
-  margin-right: 0.6rem;
-  transition: all 0.4s ease-in-out;
-}
-
-.right ul li img:hover {
-  transform: rotate(180deg);
-}
-
-.copyright {
-  text-align: center;
-  color: #fcfcfc;
-  background-color: #06bee1;
-  padding: 1rem 0;
-}
-
 /* Dark Mode */
 .step__list li.dark {
   margin-top: 1rem;
@@ -368,7 +284,7 @@ footer .footer__chun {
   .headings p,
   .what p {
     margin: 1.5rem 0;
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
 
   .testimonial_boxes {
@@ -389,6 +305,25 @@ footer .footer__chun {
   .what__headings {
     text-align: center;
     width: 70%;
-    margin-top: 4rem;
+    margin: 4rem 0 2rem;
+  }
+}
+
+@media (max-width: 750px) {
+  .headings,
+  .what__headings {
+    text-align: center;
+    width: 95%;
+    margin-top: 3rem;
+  }
+
+  .file__wrapper,
+  .choose__us-content {
+    width: 90vw;
+  }
+
+  .services__content {
+    text-align: center;
+    width: 85vw;
   }
 }
