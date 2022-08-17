@@ -1,0 +1,125 @@
+.header_wrapper {
+  width: 85vw;
+  margin: 0 auto;
+  padding: 3rem 0 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+img {
+  max-width: 100%;
+}
+
+.logo p {
+  color: #03256c;
+  font-weight: bold;
+  margin-left: 0.5rem;
+}
+
+.active {
+  background-color: #e6e9f0;
+}
+
+.blue {
+  position: relative;
+  bottom: 1.5rem;
+}
+
+.keet {
+  color: #06bee1;
+}
+
+.nav__bar ul {
+  gap: 3rem;
+}
+
+li {
+  list-style: none;
+}
+
+header a {
+  text-decoration: none;
+  color: #000;
+}
+
+.desktop__navigations {
+  justify-content: space-between;
+  gap: 4rem;
+}
+
+.buttons {
+  gap: 2rem;
+}
+
+header .btn {
+  background-color: #03256c;
+  color: #fcfcfc;
+  font-family: inherit;
+  margin: 0.5rem 0;
+  padding: 0.5rem 0.8rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn:hover {
+  transform: scale(1.04);
+}
+
+.btn:active {
+  transform: scale(0.96);
+}
+
+header .unfilled {
+  background-color: #fff;
+  color: #03256c;
+  border: 1px solid #03256c;
+}
+
+.active {
+  background-color: transparent;
+  color: #03256c;
+  font-weight: bold;
+}
+
+.toggle {
+  display: flex;
+
+  cursor: pointer;
+}
+
+.light_mode,
+.dark_mode {
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.3rem 0.7rem;
+  border-radius: 5rem;
+}
+
+.light_mode img,
+.dark_mode img {
+  padding: 0.2rem;
+  border-radius: 50%;
+}
+
+.dark_mode {
+  background-color: #8b9bbb;
+  padding: 0.3 0.7rem;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.light_mode {
+  background-color: #03256c;
+  display: none;
+  color: #fff;
+}
+
+.dark_mode img {
+  background-color: #03256c;
+}
+
+.light_mode img {
+  background-color: #fff;
+}

@@ -6,3 +6,15 @@
 .check input {
   margin-right: 0.25rem;
 }
+
+a {
+  color: #03256c;
+}
+
+.btn-sign a {
+  color: #fff;
+}
+
+strong {
+  font-size: 0.8rem;
+}

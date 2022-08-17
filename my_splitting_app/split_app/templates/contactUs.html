@@ -17,6 +17,7 @@
       rel="stylesheet"
       href="{{ url_for('static',filename='styles/contactUs.css') }}"
     />
+    <script src="{{url_for('static', filename='javascripts/dark.js')}}" defer></script>
   </head>
   <body>
     <!--Navbar-->
@@ -44,7 +45,7 @@
                 <a href="{{ url_for('main_bp.aboutUs') }}">About Us</a>
               </li>
               <li>
-                <a href="{{ url_for('main_bp.faq') }}" >Documentation</a>
+                <a href="{{ url_for('main_bp.documentation') }}" >Documentation</a>
               </li>
             </ul>
           </nav>
@@ -178,12 +179,12 @@
             <div class="footer__logo logo flex_c">
               <div class="logo__img">
                 <img
-                  src="{{ url_for('static', filename='Images/Ellipse 13.png') }}"
+                  src=" {{ url_for('static', filename='Images/Ellipse 13.png') }} "
                   class="blue"
                   alt="logo icon"
                 />
                 <img
-                  src=" {{ url_for('static', filename='Images/Ellipse 14.png') }}"
+                  src="{{ url_for('static', filename='Images/Ellipse 14.png') }} "
                   class="light"
                   alt="logo icon"
                 />
@@ -199,7 +200,7 @@
             <ul>
               <li>
                 <img
-                  src="{{ url_for('static', filename='Images/google-icon.png') }}"
+                  src="{{ url_for('static', filename='Images/google-icon.png') }} "
                   alt="google icon"
                 />
               </li>
@@ -219,10 +220,11 @@
             </ul>
           </div>
         </div>
-        <div class="right">
-          <h3>Useful Links</h3>
-          <ul>
-            <li>
+        <div class="right flex_c">
+          <div class="useful__links">
+            <h3>Useful Links</h3>
+            <ul>
+              <li>
               <img
                 src="{{ url_for('static', filename='/Images/arrow.png') }}"
                 alt="arrow icon"
@@ -243,14 +245,29 @@
               />
               <a href="{{ url_for('main_bp.contactUs') }}">Contact Us</a>
             </li>
-            <li>
-              <img
-                src="{{ url_for('static', filename='Images/arrow.png') }}"
-                alt="arrow icon"
-              />
-              <a href="#">Terms and Conditions</a>
-            </li>
-          </ul>
+            </ul>
+          </div>
+          <div class="help">
+            <h3>Help</h3>
+            <ul>
+              <li>
+                <img src="{{ url_for('static', filename='/Images/arrow.png') }}" alt="arrow icon" />
+                <a href="{{ url_for('main_bp.documentation') }}">Documentation</a>
+              </li>
+              <li>
+                <img src="{{ url_for('static', filename='/Images/arrow.png') }}" alt="arrow icon" />
+                <a href="{{ url_for('main_bp.faq') }}">FAQs</a>
+              </li>
+              <li>
+                <img src="{{ url_for('static', filename='/Images/arrow.png') }}" alt="arrow icon" />
+                <a href="{{ url_for('main_bp.terms') }}">Terms and Conditions</a>
+              </li>
+              <li>
+                <img src="{{ url_for('static', filename='/Images/arrow.png') }}" alt="arrow icon" />
+                <a href="{{ url_for('main_bp.policy') }}">Privacy Policy</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
       <div class="copyright">&COPY; Chunkeet</div>

@@ -13,6 +13,7 @@
       href="{{ url_for('static',filename='styles/general.css') }}"
     />
     <script src="{{url_for('static', filename='javascripts/drop.js')}}" defer></script>
+    <script src="{{url_for('static', filename='javascripts/dark.js')}}" defer></script>
 
     <title>Documentation Page</title>
   </head>
@@ -41,7 +42,7 @@
                 <a href="{{ url_for('main_bp.aboutUs') }}">About Us</a>
               </li>
               <li>
-                <a href="{{ url_for('main_bp.faq') }}" class="active">Documentation</a>
+                <a href="{{ url_for('main_bp.documentation') }}" class="active">Documentation</a>
               </li>
             </ul>
           </nav>
@@ -80,16 +81,16 @@
         <nav>
           <ul class="nav__items">
             <li class="nav__item">
-              <a href="{{ url_for('main_bp.documentation') }}">Introduction</a>
+              <a class="white" href="{{ url_for('main_bp.documentation') }}">Introduction</a>
             </li>
             <li class="nav__item">
-              <a href="{{ url_for('main_bp.gettingStarted') }}">Getting Started</a>
+              <a class="white" href="{{ url_for('main_bp.gettingStarted') }}">Getting Started</a>
             </li>
             <li class="nav__item">
-              <a href="{{ url_for('main_bp.tools') }}">How the tools work</a>
+              <a class="white" href="{{ url_for('main_bp.tools') }}">How the tools work</a>
             </li>
             <li class="nav__item active">
-              <a href="{{ url_for('main_bp.faq') }}">FAQs</a>
+              <a class="white" href="{{ url_for('main_bp.faq') }}">FAQs</a>
             </li>
           </ul>
         </nav>
@@ -328,39 +329,26 @@
               />
               <a href="{{ url_for('main_bp.contactUs') }}">Contact Us</a>
             </li>
-            <li>
-              <img
-                src="{{ url_for('static', filename='Images/arrow.png') }}"
-                alt="arrow icon"
-              />
-              <a href="#">Terms and Conditions</a>
-            </li>
             </ul>
           </div>
           <div class="help">
             <h3>Help</h3>
             <ul>
               <li>
-                <img src="{{ url_for('static', filename='/Images/arrow.png') }}" alt="arrow icon" /><a
-                  href="./documentation.html"
-                  >Documentation</a
-                >
+                <img src="{{ url_for('static', filename='/Images/arrow.png') }}" alt="arrow icon" />
+                <a href="{{ url_for('main_bp.documentation') }}">Documentation</a>
               </li>
               <li>
-                <img src="{{ url_for('static', filename='/Images/arrow.png') }}" alt="arrow icon" /><a
-                  href="./faq.html"
-                  >FAQs</a
-                >
+                <img src="{{ url_for('static', filename='/Images/arrow.png') }}" alt="arrow icon" />
+                <a href="{{ url_for('main_bp.faq') }}">FAQs</a>
               </li>
               <li>
-                <img src="{{ url_for('static', filename='/Images/arrow.png') }}" alt="arrow icon" /><a href="#"
-                  >Terms and Conditions</a
-                >
+                <img src="{{ url_for('static', filename='/Images/arrow.png') }}" alt="arrow icon" />
+                <a href="{{ url_for('main_bp.terms') }}">Terms and Conditions</a>
               </li>
               <li>
-                <img src="{{ url_for('static', filename='/Images/arrow.png') }}" alt="arrow icon" /><a href="#"
-                  >Privacy Policy</a
-                >
+                <img src="{{ url_for('static', filename='/Images/arrow.png') }}" alt="arrow icon" />
+                <a href="{{ url_for('main_bp.policy') }}">Privacy Policy</a>
               </li>
             </ul>
           </div>
