@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+    rel="stylesheet"
+    href="{{ url_for('static',filename='styles/general.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static',filename='styles/terms.css') }}"
+    />
+    <script src="{{url_for('static', filename='javascripts/dark.js')}}" defer></script>
+
+    <title>Terms & conditions</title>
+  </head>
+  <body>
+    <header>
+      <div class="header_wrapper">
+        <div class="logo flex_c">
+          <div class="logo__img flex_c">
+            <img src="{{ url_for('static', filename = 'Images/Ellipse 13.png') }}" alt="logo icon" />
+            <img src="{{ url_for('static', filename = 'Images/Ellipse 14.png') }}" alt="logo icon" />
+          </div>
+          <p>
+            Chun<span class="keet">keet</span>
+          </p>
+        </div>
+        <div class="desktop__navigations flex_c">
+          <nav class="nav__bar">
+            <ul class="flex_c">
+              <li>
+                <a href="{{ url_for('main_bp.index') }}" >Home</a>
+              </li>
+              <li>
+                <a href="{{ url_for('main_bp.contactUs') }}">Contact Us</a>
+              </li>
+              <li>
+                <a href="{{ url_for('main_bp.aboutUs') }}">About Us</a>
+              </li>
+              <li>
+                <a href="{{ url_for('main_bp.documentation') }}">Documentation</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="toggle">
+            <div class="dark_mode">
+              <small>Dark</small>
+              <img src="{{ url_for('static', filename = 'Images/dark-icon.png') }}" alt="dark icon" />
+            </div>
+            <div class="light_mode">
+              <small>Light</small>
+              <img src=" {{ url_for('static', filename = 'Images/light-Icon.png') }} " alt="light icon" />
+            </div>
+          </div>
+          <div class="buttons flex_c">
+            <a href="{{ url_for('auth_bp.login') }}" class="btn unfilled">Sign In</a>
+            <a href="{{ url_for('auth_bp.signup') }}" class="btn filled">Sign Up</a>
+          </div>
+        </div>
+      </div>
+      <!--  <div class="mobile__navigations">
+            <nav class="nav__bar">
+                <ul>
+                    <li>Home</li>
+                    <li>Contact Us</li>
+                    <li>About Us</li>
+                </ul>
+            </nav>
+            <div class="buttons">
+                <a href="#" class="btn unfilled"></a >
+                <a href="#" class="btn filled"></a >
+            </div>
+          </div>  -->
+    </header>
+    <main class="container">
+        <h1> Terms and Conditions</h1>
+
+    <div class="contents">
+        <div class="content">
+        <h2> 1.Introduction </h2>
+        <p>
+            Greetings from Chunkeet (the "Company," "we," "our," and "us").
+            These Terms of Service ("Terms", "Terms of Service") control how you use the Chunkeet website (the "Service"), which can be accessed at chunkeet.com. Your use of our Service is also governed by our Privacy Policy, which details how we gather, protect, and disclose data resulting from your use of our websites.
+            These Terms and our Privacy Policy together constitute your agreement with us (the "Agreements"). You declare that you have read and comprehended the Agreements and that you are willing to be bound by them. You may not use the Service if you disagree with (or are unable to comply with) the Agreements, but if you do so, kindly let us know by sending an email to contact@jedok.com so we can try to find a solution. These Terms apply to all visitors, users and others who wish to access or use Service.</p>
+    </div>
+    <div class="contents">
+        <div class="content">
+        <h2> 2.Communication </h2>
+        <p>You consent to receive newsletters, marketing and promotional materials, and other information from us by using our service. Nevertheless, you have the option to stop receiving any or all of these emails from us by clicking the unsubscribe link </p>
+        </div>
+            <div class="contents">
+                <div class="content">
+                <h2> 3. Promotional activities, contests, and sweepstakes </h2>
+                <p>Any competitions, draws, or other giveaways (collectively, "Promotions") made accessible through the Service can be subject to regulations distinct from these Terms of Service. Please examine the applicable regulations as well as our Privacy Policy before taking part in any Promotions. When these Terms of Service conflict with the terms of a Promotion, the rules of the Promotion will take precedence.</p>
+                </div>
+
+            <div class="contents">
+                <div class="content">
+                <h2> 4. Content </h2>
+                <p>You can make certain data, text, graphics, videos, and other materials ("Content") available by posting, linking, storing, sharing, and in other ways using our service. You are accountable for all Content that you upload to or share using the Service, including its accuracy, dependability, and relevance. By posting Content on or through the Service, You represent and warrant that I the Content is yours (you own it), and/or you have the right to use it, and (ii) you have the right to grant us the rights and license set forth in these Terms. You also represent and warrant that (ii) the posting of your Content on or through the Service does not violate any third party's right to privacy, publicity, privacy, copyright, contract, or other rights. We hold the right to close an account of  account of anyone found to be infringing on a copyright. You retain any and all of your rights to any Content you submit, post or display on or through Service and you are responsible for protecting those rights. We take no responsibility and assume no liability for Content you or any third party posts on or through Service. However, by posting Content using Service you grant us the right and license to use, modify, publicly perform, publicly display, reproduce, and distribute such Content on and through Service. You agree that this license includes the right for us to make your Content available to other users of Service, who may also use your Content subject to these Terms.
+                    Chunkeet has the right but not the obligation to monitor and edit all Content provided by users.
+                    In addition, Content found on or through this Service are the property of Chunkeet  or used with permission. You may not distribute, modify, transmit, reuse, download, repost, copy, or use said Content, whether in whole or in part, for commercial purposes or for personal gain, without express advance written permission from us.
+                    </p>
+                </div>
+
+            <div class="contents">
+                <div class="content">
+                <h2> 5. Prohibited Uses </h2>
+                <p>You may use Service only for lawful purposes and in accordance with Terms. You agree not to use Service:
+                    <br>0.1. In any way that violates any applicable national or international law or regulation.
+
+                    <br>0.2. For the purpose of exploiting, harming, or attempting to exploit or harm minors in any way by exposing them to inappropriate content or otherwise.
+                    
+                    <br>0.3. To transmit, or procure the sending of, any advertising or promotional material, including any “junk mail”, “chain letter,” “spam,” or any other similar solicitation.
+                    
+                    <br>0.4. To impersonate or attempt to impersonate Company, a Company employee, another user, or any other person or entity.
+                    
+                    <br>0.5. In any way that infringes upon the rights of others, or in any way is illegal, threatening, fraudulent, or harmful, or in connection with any unlawful, illegal, fraudulent, or harmful purpose or activity.
+                    
+                    <br>0.6. To engage in any other conduct that restricts or inhibits anyone’s use or enjoyment of Service, or which, as determined by us, may harm or offend Company or users of Service or expose them to liability.<br>
+                    <br>
+                    Additionally, you agree not to:
+
+                    <br>0.1. Use Service in any manner that could disable, overburden, damage, or impair Service or interfere with any other party’s use of Service, including their ability to engage in real time activities through Service.
+
+                    <br>0.2. Use any robot, spider, or other automatic device, process, or means to access Service for any purpose, including monitoring or copying any of the material on Service.
+
+                    <br>0.3. Use any manual process to monitor or copy any of the material on Service or for any other unauthorized purpose without our prior written consent.
+
+                    <br>0.4. Use any device, software, or routine that interferes with the proper working of Service.
+
+                    <br>0.5. Introduce any viruses, trojan horses, worms, logic bombs, or other material which is malicious or technologically harmful.
+
+                    <br>0.6. Attempt to gain unauthorized access to, interfere with, damage, or disrupt any parts of Service, the server on which Service is stored, or any server, computer, or database connected to Service.
+
+                    <br>0.7. Attack Service via a denial-of-service attack or a distributed denial-of-service attack.
+
+                    <br>0.8. Take any action that may damage or falsify Company rating.
+
+                    <br>0.9. Otherwise attempt to interfere with the proper working of Service.
+
+                    </p>
+                </div>
+
+                <div class="contents">
+                  <div class="content">
+                  <h2> 6. Analytics </h2>
+                  <p>
+                    We may use third-party Service Providers to monitor and analyze the use of our Service.
+                  </p>
+                  </div>
+
+                  <div class="contents">
+                    <div class="content">
+                    <h2> 7. No Use By Minors </h2>
+                    <p>
+                      Service is intended only for access and use by individuals at least eighteen (18) years old. By accessing or using Service, you warrant and represent that you are at least eighteen (18) years of age and with the full authority, right, and capacity to enter into this agreement and abide by all of the terms and conditions of Terms. If you are not at least eighteen (18) years old, you are prohibited from both the access and usage of Service.
+                    </p>
+                    </div>
+
+                <div class="contents">
+                    <div class="content">
+                    <h2>8. Intellectual Property </h2>
+                    <p>
+                      Service and its original content (excluding Content provided by users), features and functionality are and will remain the exclusive property of FileProInfo and its licensors. Service is protected by copyright, trademark, and other laws of and foreign countries. Our trademarks may not be used in connection with any product or service without the prior written consent of FileProInfo.
+                    </p>
+                    </div>
+
+                <div class="contents">
+                    <div class="content">
+                    <h2>9. Copyright Policy</h2>
+                    <p>
+                      We respect the intellectual property rights of others. It is our policy to respond to any claim that Content posted on Service infringes on the copyright or other intellectual property rights (“Infringement”) of any person or entity.
+                      If you are a copyright owner, or authorized on behalf of one, and you believe that the copyrighted work has been copied in a way that constitutes copyright infringement, please submit your claim via email to contact@fileproinfo.com, with the subject line: “Copyright Infringement” and include in your claim a detailed description of the alleged Infringement as detailed below, under “DMCA Notice and Procedure for Copyright Infringement Claims”
+                      You may be held accountable for damages (including costs and attorneys’ fees) for misrepresentation or bad-faith claims on the infringement of any Content found on and/or through Service on your copyright.
+
+                    </p>
+                    </div>
+
+                      <div class="contents">
+                        <div class="content">
+                        <h2>10. DMCA Notice and Procedure for Copyright Infringement Claimsy</h2>
+                        <p>
+                          You may submit a notification pursuant to the Digital Millennium Copyright Act (DMCA) by providing our Copyright Agent with the following information in writing (see 17 U.S.C 512(c)(3) for further detail):<br>
+
+                          <br>0.1. an electronic or physical signature of the person authorized to act on behalf of the owner of the copyright’s interest;
+
+                          <br>0.2. a description of the copyrighted work that you claim has been infringed, including the URL (i.e., web page address) of the location where the copyrighted work exists or a copy of the copyrighted work;
+
+                          <br>0.3. identification of the URL or other specific location on Service where the material that you claim is infringing is located;
+
+                          <br>0.4. your address, telephone number, and email address;
+
+                          <br>0.5. a statement by you that you have a good faith belief that the disputed use is not authorized by the copyright owner, its agent, or the law;
+
+                          <br>0.6. a statement by you, made under penalty of perjury, that the above information in your notice is accurate and that you are the copyright owner or authorized to act on the copyright owner’s behalf.<br>
+
+                          <br>You can contact our Copyright Agent via email at contact@chunkeet.com.
+
+                        </p>
+                        </div>
+    </main>
+    <footer>
+      <div class="footer__wrapper">
+        <div class="left">
+          <div class="left__footer">
+            <div class="footer__logo logo flex_c">
+              <div class="logo__img">
+                <img
+                  src=" {{ url_for('static', filename='Images/Ellipse 13.png') }} "
+                  class="blue"
+                  alt="logo icon"
+                />
+                <img
+                  src="{{ url_for('static', filename='Images/Ellipse 14.png') }} "
+                  class="light"
+                  alt="logo icon"
+                />
+              </div>
+              <p class="footer__chun">Chun<span class="keet">keet</span></p>
+            </div>
+            <p class="chunk">
+              Chunkeet application we aim at accepting large file and breaking
+              them into bits while maintaining the right format.
+            </p>
+          </div>
+          <div class="socials">
+            <ul>
+              <li>
+                <img
+                  src="{{ url_for('static', filename='Images/google-icon.png') }} "
+                  alt="google icon"
+                />
+              </li>
+              <li>
+                <img
+                  src="{{ url_for('static', filename='Images/facebook-icon.png') }}"
+                  alt="facebook icon"
+                  class="facebook"
+                />
+              </li>
+              <li>
+                <img
+                  src="{{ url_for('static', filename='Images/twitter-icon.png') }}"
+                  alt="twitter icon"
+                />
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="right flex_c">
+          <div class="useful__links">
+            <h3>Useful Links</h3>
+            <ul>
+              <li>
+              <img
+                src="{{ url_for('static', filename='/Images/arrow.png') }}"
+                alt="arrow icon"
+              />
+              <a href="{{ url_for('main_bp.index') }}">Home</a>
+            </li>
+            <li>
+              <img
+                src="{{ url_for('static', filename='/Images/arrow.png') }}"
+                alt="arrow icon"
+              />
+              <a href="{{ url_for('main_bp.aboutUs') }}">About Us</a>
+            </li>
+            <li>
+              <img
+                src="{{ url_for('static', filename='/Images/arrow.png') }}"
+                alt="arrow icon"
+              />
+              <a href="{{ url_for('main_bp.contactUs') }}">Contact Us</a>
+            </li>
+            </ul>
+          </div>
+          <div class="help">
+            <h3>Help</h3>
+            <ul>
+              <li>
+                <img src="{{ url_for('static', filename='/Images/arrow.png') }}" alt="arrow icon" />
+                <a href="{{ url_for('main_bp.documentation') }}">Documentation</a>
+              </li>
+              <li>
+                <img src="{{ url_for('static', filename='/Images/arrow.png') }}" alt="arrow icon" />
+                <a href="{{ url_for('main_bp.faq') }}">FAQs</a>
+              </li>
+              <li>
+                <img src="{{ url_for('static', filename='/Images/arrow.png') }}" alt="arrow icon" />
+                <a href="{{ url_for('main_bp.terms') }}">Terms and Conditions</a>
+              </li>
+              <li>
+                <img src="{{ url_for('static', filename='/Images/arrow.png') }}" alt="arrow icon" />
+                <a href="{{ url_for('main_bp.policy') }}">Privacy Policy</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">&COPY; Chunkeet</div>
+    </footer>
+  </body>
+</html>
