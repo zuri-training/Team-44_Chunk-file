@@ -81,22 +81,22 @@
       <section class="left_side">
         <nav>
           <ul class="nav__items">
-            <li class="nav__item">
-              <a href="../documentation/documentation.html">Introduction</a>
-            </li>
-            <li class="nav__item">
-              <a href="../documentation/gettingStarted.html">Getting Started</a>
-            </li>
             <li class="nav__item active">
-              <a href="../documentation/tools.html">How the tools work</a>
+              <a href="{{ url_for('main_bp.documentation') }}">Introduction</a>
             </li>
             <li class="nav__item">
-              <a href="../documentation/faq.html">FAQs</a>
+              <a href="{{ url_for('main_bp.gettingStarted') }}">Getting Started</a>
+            </li>
+            <li class="nav__item">
+              <a href="{{ url_for('main_bp.tools') }}">How the tools work</a>
+            </li>
+            <li class="nav__item ">
+              <a href="{{ url_for('main_bp.faq') }}">FAQs</a>
             </li>
           </ul>
         </nav>
       </section>
-
+      
       <section class="right_side">
         <div id="tools__work">
           <div class="part">
