@@ -16,6 +16,8 @@ I'm a Fullstack Web Developer and the Team Lead for the project chunking for tea
 - [Settings Page Markup](https://github.com/zuri-training/Team-44_Chunk-file/blob/main/Frontend/pages/settings.html)
 - [Draft Page Markup](https://github.com/zuri-training/Team-44_Chunk-file/blob/main/Frontend/pages/newUserDraftpage.html)
 - [Dashboard Page Markup](https://github.com/zuri-training/Team-44_Chunk-file/blob/main/Frontend/pages/newUserDashboard.html).
+- [Terms and Condition Page Markup](https://github.com/zuri-training/Team-44_Chunk-file/blob/main/Frontend/pages/terms.html).
+- [Privacy Policy Page Markup](https://github.com/zuri-training/Team-44_Chunk-file/blob/main/Frontend/pages/policy.html).
 
 ## Implemented HTML Page Styling
 
@@ -31,6 +33,8 @@ I'm a Fullstack Web Developer and the Team Lead for the project chunking for tea
 - [Settings Page Styling](https://github.com/zuri-training/Team-44_Chunk-file/blob/main/Frontend/styles/settings.css)
 - [Draft Page Styling](https://github.com/zuri-training/Team-44_Chunk-file/blob/main/Frontend/styles/draftStorage.css)
 - [Dashboard Page Styling](https://github.com/zuri-training/Team-44_Chunk-file/blob/main/Frontend/styles/newUserDashboard.css)
+- [Dashboard Page Styling](https://github.com/zuri-training/Team-44_Chunk-file/blob/main/Frontend/styles/terms.css)
+- [Dashboard Page Styling](https://github.com/zuri-training/Team-44_Chunk-file/blob/main/Frontend/styles/policy.css)
 
 ## Implemented HTML Page Logic(JavaScript)
 
