@@ -18,7 +18,7 @@ The platform utilizes a simple setup and requires no installation. It can be acc
 
 ## Execution
 
-1. Go to http://chunkeet.pythonanywhere.com
+1. Go to https://chunkeet.pythonanywhere.com
 2. Register or Sign Up
 3. Go to Dashboard
 4. Drag and Drop file or Browse file
