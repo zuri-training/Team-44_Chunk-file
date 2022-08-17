@@ -99,6 +99,25 @@ def faq():
         current_user=current_user,
     )
 
+@main_bp.route("/privacy")
+def policy():
+    """Logged-in User Dashboard."""
+    return render_template(
+        "policy.html",
+        title="FAQ Page",
+        template="dashboard-template",
+        current_user=current_user,
+    )    
+
+@main_bp.route("/terms&conditions")
+def terms():
+    """Logged-in User Dashboard."""
+    return render_template(
+        "terms.html",
+        title="FAQ Page",
+        template="dashboard-template",
+        current_user=current_user,
+    )
 
 @main_bp.route("/aboutUs")
 def aboutUs():

@@ -310,7 +310,8 @@ h2.dark,
 h3.dark,
 p.dark,
 a.dark,
-.step_list.dark {
+.step_list.dark,
+.white.dark {
   color: #fcfcfc;
 }
 

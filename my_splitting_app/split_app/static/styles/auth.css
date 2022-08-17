@@ -16,6 +16,7 @@ body {
   font-family: 'Sora', sans-serif;
   min-height: 100vh;
   max-width: 100vw;
+  overflow-x: hidden;
 }
 
 a {
@@ -35,13 +36,13 @@ a {
   justify-content: center;
 }
 
-.left {
+.left_form {
   flex: 0.45;
   background-color: #e6e9f0;
-  height: 100vh;
+  min-height: 100vh;
 }
 
-.right {
+.right_form {
   flex-direction: column;
   flex: 0.65;
 }
@@ -66,7 +67,7 @@ form h1 {
   padding: 0.5rem;
   border-radius: 0.2rem;
   border: 1px solid #4d4d4d46;
-  /* border: none; */
+  border: none;
   position: absolute;
   top: 0;
   left: 0;
@@ -77,14 +78,14 @@ form h1 {
 }
 
 .form__input:hover {
-  border-color: #4d4d4da4;
+  border: 1px solid #4d4d4da4;
 }
 
 /* Change border when input focus*/
 
 .form__input:focus {
-  border-color: none;
-  background-color: #fff;
+  border: none;
+  /* background-color: #fff; */
   outline: none;
 }
 
@@ -110,7 +111,7 @@ reduce the size of the label and move upwards
 
 .form__input:focus ~ .form__label,
 .form__input:not(:placeholder-shown).form__input:not(:focus) ~ .form__label {
-  top: -0.85rem;
+  top: -0.65rem;
   font-size: 1rem;
   left: 0.8rem;
   /* padding: 0.3rem; */
@@ -119,7 +120,7 @@ reduce the size of the label and move upwards
   color: #383838;
 }
 
-.btn {
+main .btn {
   background-color: #03256c;
   color: #fff;
   font-weight: bold;
@@ -156,4 +157,19 @@ small {
 strong {
   color: #03256c;
   font-size: 1rem;
+}
+
+@media screen and (max-width: 1180px) {
+  .body {
+    width: 100%;
+    height: auto;
+    padding: 70px 0px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .a {
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+  }
 }
