@@ -10,7 +10,7 @@ const header = document.querySelector('header');
 const btn = document.querySelectorAll('.btn');
 const serviceHead = document.querySelectorAll('.service_head');
 const servicePara = document.querySelectorAll('.service_para');
-const testimonialBox = document.querySelectorAll('.testimonial_box');
+const white = document.querySelectorAll('.white');
 const testPara = document.querySelectorAll('.test_para');
 const stepList = document.querySelectorAll('.step_list');
 const unfilled = document.querySelectorAll('.unfilled');
@@ -36,6 +36,7 @@ toggle.addEventListener('click', () => {
     servicePara.forEach((tog) => tog.classList.remove('dark'));
     stepList.forEach((tog) => tog.classList.remove('dark'));
     testimonialBox.forEach((tog) => tog.classList.remove('dark'));
+    white.forEach((tog) => tog.classList.remove('dark'));
     testPara.forEach((tog) => tog.classList.remove('dark'));
     unfilled.forEach((tog) => tog.classList.remove('dark'));
   } else {
@@ -53,6 +54,7 @@ toggle.addEventListener('click', () => {
     servicePara.forEach((tog) => tog.classList.add('dark'));
     stepList.forEach((tog) => tog.classList.add('dark'));
     testimonialBox.forEach((tog) => tog.classList.add('dark'));
+    white.forEach((tog) => tog.classList.add('dark'));
     testPara.forEach((tog) => tog.classList.add('dark'));
     unfilled.forEach((tog) => tog.classList.add('dark'));
   }
